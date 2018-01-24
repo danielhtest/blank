@@ -1,0 +1,2897 @@
+<!doctype html>
+
+<html>
+	
+	<head>
+		  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+		  <title>Ricoh form template</title>
+		  <style>
+		    html, body{
+		      background:#FFF;
+		    }
+		  </style>
+		  
+		  <link id="mktoForms2BaseStyle" rel="stylesheet" type="text/css" href="css/forms2.css">
+		  <link id="mktoForms2ThemeStyle" rel="stylesheet" type="text/css" href="css/forms2-theme-plain.css">
+		  
+		  <!--OUR STYLES HERE-->
+		  <style>
+			  
+			/*--- Enchilada Styles ---*/
+			
+			  html {
+				-webkit-text-size-adjust: 100%;
+				-ms-text-size-adjust: 100%;
+
+			  }
+			  
+			  form {
+				  font-size: 19px !important;
+				  font-weight: 600 !important;
+			  }
+			  
+			  .mktoForm {
+				  margin:0 auto;
+				  padding-top: 50px;
+				  width: 800px !important;
+			  }
+			  
+			  .mktoForm .mktoFormCol {
+				  width: 100%;
+			  }
+			  
+			  .mktoForm .mktoFieldWrap {
+				  width: 100%;
+			  }
+			  
+			  .mktoForm .mktoLabel {
+				  width: 100% !important;
+				  margin-bottom: 14px !important;
+			  }
+			  
+			  .mktoForm .mktoField {
+			  	  width: 100% !important;
+			  }
+			  
+			  input {
+
+				  border-top: 0 !important;
+				  border-left: 0 !important;
+				  border-right: 0 !important;
+				  border-bottom: 1px solid #eee !important;
+				  padding-left: 0 !important;
+				  width: 100% !important;
+			  }
+			  
+			  ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+				  color: #d1d1d1;
+				  font-weight: 400;
+				  font-size: 19px;
+			  }
+			  
+		   	  ::-moz-placeholder { /* Firefox 19+ */
+				  color: #d1d1d1;
+				  font-weight: 400;
+				  font-size: 19px;
+			  }
+			  
+		      :-ms-input-placeholder { /* IE 10+ */
+				  color: #d1d1d1;
+				  font-weight: 400;
+				  font-size: 19px;
+			  }
+			  
+			  :-moz-placeholder { /* Firefox 18- */
+				  color: #d1d1d1;
+				  font-weight: 400;
+				  font-size: 19px;
+			  }
+			  
+			  input:focus { 
+			    outline: none !important;
+			    color: #717171;
+			    font-weight: 400 !important;
+			    font-size: 19px;
+			  }
+			  
+			  select, input[type="color" i][list] {
+				  background: #fff !important;
+				  color: #717171;
+				  font-weight: 400 !important;
+				  font-size: 19px !important;
+				  border-top: none !important;
+				  border-left: none !important;
+				  border-right: none !important;
+				  border-bottom: 1px solid #eee !important;
+				
+				 
+				  
+			  }
+			  
+			  select, input {
+				  height: 29px;
+				  
+			  }
+			  
+			  select:focus {
+			    outline: none !important;
+			}
+			  
+			  .mktoButtonWrap {
+				  margin-left: 0 !important;
+			  }
+			  
+			  .mktoButtonRow {
+				  margin-top: 40px !important;
+			  }
+			  
+			  .mktoForm .mktoGutter {
+				  display: none !important;
+			  }
+			  
+			  .mktoForm button.mktoButton {
+				  padding: 12px 24px;
+				  border: 1px solid transparent;
+				  border-radius: 3px;
+				  background-color: #cf142b;
+				  color: #fff;
+				  line-height: 1.2;
+				  text-align: center;
+				  text-decoration: none;
+				  cursor: pointer;
+				  -webkit-transition: all .2s ease-in-out;
+				  transition: all .2s ease-in-out;
+				  -webkit-user-select: none;
+				  -moz-user-select: none;
+				  -ms-user-select: none;
+				  user-select: none;
+				  -webkit-appearance: none;
+				  font-weight: 600 !important;				  
+			  }			
+			  
+			  @media only screen and (max-width: 500px) {
+				  .mktoForm {
+					  width: 100% !important;
+				  }
+				  
+				  .mktoForm .mktoLabel {
+					  padding-top: 1em;
+				  }
+			  }  
+			  
+			  /* Add your custom CSS below */
+					@charset "UTF-8";
+					/*! reset - based off YUI with some customisation */
+					html {
+					  background-color: #fff;
+					  color: #000;
+					  -webkit-text-size-adjust: 100%;
+					  -ms-text-size-adjust: 100%;
+					}
+					
+					body,
+					div,
+					dl,
+					dt,
+					dd,
+					ul,
+					ol,
+					li,
+					h1,
+					h2,
+					h3,
+					h4,
+					h5,
+					h6,
+					pre,
+					code,
+					form,
+					fieldset,
+					legend,
+					input,
+					textarea,
+					p,
+					blockquote,
+					th,
+					td {
+					  margin: 0;
+					  padding: 0;
+					}
+					
+					table {
+					  border-collapse: collapse;
+					  border-spacing: 0;
+					}
+					
+					fieldset,
+					img {
+					  border: 0;
+					}
+					
+					address,
+					caption,
+					cite,
+					code,
+					dfn,
+					var {
+					  font-style: normal;
+					  font-weight: normal;
+					}
+					
+					ol,
+					ul {
+					  list-style: none;
+					}
+					
+					caption,
+					th {
+					  text-align: left;
+					}
+					
+					h1,
+					h2,
+					h3,
+					h4,
+					h5,
+					h6 {
+					  font-size: 100%;
+					  font-weight: normal;
+					}
+					
+					q:before,
+					q:after {
+					  content: "";
+					}
+					
+					abbr,
+					acronym {
+					  border: 0;
+					  font-variant: normal;
+					}
+					
+					button,
+					input,
+					textarea,
+					select {
+					  font-family: inherit;
+					  font-size: inherit;
+					  font-weight: inherit;
+					}
+					
+					legend {
+					  color: #000;
+					}
+					
+					/*! custom switch resets */
+					html {
+					  -webkit-box-sizing: border-box;
+					  box-sizing: border-box;
+					  height: 100%;
+					  overflow-y: scroll;
+					  -ms-overflow-style: scrollbar;
+					}
+					
+					*,
+					*:before,
+					*:after {
+					  -webkit-box-sizing: inherit;
+					  box-sizing: inherit;
+					}
+					
+					input[type="number"] {
+					  -moz-appearance: textfield;
+					}
+					
+					input[type="number"]::-webkit-inner-spin-button {
+					  -webkit-appearance: none;
+					}
+					
+					input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-results-button, input[type="search"]::-webkit-search-results-decoration {
+					  -webkit-appearance: none;
+					}
+					
+					input[type="text"]::-ms-reveal, input[type="text"]::-ms-clear {
+					  display: none;
+					  width: 0;
+					  height: 0;
+					}
+					
+					button::-moz-focus-inner,
+					[type="button"]::-moz-focus-inner,
+					[type="reset"]::-moz-focus-inner,
+					[type="submit"]::-moz-focus-inner {
+					  border-style: none;
+					}
+					
+					iframe {
+					  width: 100%;
+					  border: 0;
+					}
+					
+					video {
+					  width: 100%;
+					}
+					
+					/*! variables */
+					/*! mixins */
+					/*! animations */
+					@-webkit-keyframes fade-in {
+					  0% {
+					    opacity: 0;
+					  }
+					  100% {
+					    opacity: 1;
+					  }
+					}
+					@keyframes fade-in {
+					  0% {
+					    opacity: 0;
+					  }
+					  100% {
+					    opacity: 1;
+					  }
+					}
+					
+					@-webkit-keyframes fade-in-grow {
+					  0% {
+					    -webkit-transform: scale3d(0.618, 0.618, 1);
+					    transform: scale3d(0.618, 0.618, 1);
+					  }
+					  25%,
+					  50% {
+					    opacity: 1;
+					  }
+					  100% {
+					    -webkit-transform: scale3d(1.15, 1.4, 1);
+					    transform: scale3d(1.15, 1.4, 1);
+					    opacity: 0;
+					  }
+					}
+					
+					@keyframes fade-in-grow {
+					  0% {
+					    -webkit-transform: scale3d(0.618, 0.618, 1);
+					    transform: scale3d(0.618, 0.618, 1);
+					  }
+					  25%,
+					  50% {
+					    opacity: 1;
+					  }
+					  100% {
+					    -webkit-transform: scale3d(1.15, 1.4, 1);
+					    transform: scale3d(1.15, 1.4, 1);
+					    opacity: 0;
+					  }
+					}
+					
+					/*! typography */
+					body {
+					  color: #717171;
+					  font-family: frutiger, "frutiger linotype", univers, calibri, "gill sans", "gill sans mt", "myriad pro", myriad, "dejavu sans condensed", "liberation sans", "nimbus sans l", tahoma, geneva, "helvetica neue", helvetica, arial, sans-serif;
+					}
+					
+					::-moz-selection {
+					  background: #cf142b;
+					  color: #fff;
+					}
+					
+					::selection {
+					  background: #cf142b;
+					  color: #fff;
+					}
+					
+					strong {
+					  font-weight: bold;
+					}
+					
+					html {
+					  font-size: 100%;
+					  line-height: 1.5;
+					}
+					
+					a {
+					  color: #cf142b;
+					}
+					
+					a:focus, a:hover, a:active {
+					  color: #333;
+					}
+					
+					h6,
+					h5,
+					h4,
+					h3,
+					h2,
+					h1 {
+					  margin: 0 0 1.5rem;
+					  color: #333;
+					  font-weight: bold;
+					  -webkit-transition: font-size 0.2s ease-in-out;
+					  transition: font-size 0.2s ease-in-out;
+					}
+					
+					h6,
+					.h6 {
+					  font-size: 1rem;
+					  line-height: 1.2;
+					}
+					
+					h5,
+					.h5 {
+					  font-size: 1.125rem;
+					  line-height: 1.2;
+					}
+					
+					h4,
+					.h4 {
+					  font-size: 1.25rem;
+					  line-height: 1.2;
+					}
+					
+					h3,
+					.h3 {
+					  font-size: 1.5rem;
+					  line-height: 1.2;
+					}
+					
+					h2,
+					.h2 {
+					  font-size: 2rem;
+					  line-height: 1.2;
+					}
+					
+					h1,
+					.h1 {
+					  font-size: 2.5rem;
+					  line-height: 1.2;
+					}
+					
+					p {
+					  margin-bottom: 0.75rem;
+					}
+					
+					ol,
+					ul,
+					dl {
+					  margin-bottom: 0.75rem;
+					}
+					
+					/*! utility classes */
+					.block {
+					  display: block !important;
+					}
+					
+					.inline {
+					  display: inline !important;
+					}
+					
+					.inline-block {
+					  display: inline-block !important;
+					}
+					
+					.hidden {
+					  display: none !important;
+					}
+					
+					@media (max-width: 320px) {
+					  .hidden-mobile {
+					    display: none !important;
+					  }
+					}
+					
+					@media (min-width: 321px) and (max-width: 767px) {
+					  .hidden-tablet {
+					    display: none !important;
+					  }
+					}
+					
+					@media (min-width: 768px) {
+					  .hidden-desktop {
+					    display: none !important;
+					  }
+					}
+					
+					.sr-only {
+					  position: absolute !important;
+					  width: 1px;
+					  height: 1px;
+					  overflow: hidden;
+					  clip: rect(0, 0, 0, 0);
+					}
+					
+					@media (max-width: 767px) {
+					  .sr-only--mobile {
+					    position: absolute !important;
+					    width: 1px;
+					    height: 1px;
+					    overflow: hidden;
+					    clip: rect(0, 0, 0, 0);
+					  }
+					}
+					
+					@media (max-width: 959px) {
+					  .sr-only--tablet {
+					    position: absolute !important;
+					    width: 1px;
+					    height: 1px;
+					    overflow: hidden;
+					    clip: rect(0, 0, 0, 0);
+					  }
+					}
+					
+					.is-dragging {
+					  pointer-events: none;
+					}
+					
+					.float-left {
+					  float: left !important;
+					}
+					
+					.float-right {
+					  float: right !important;
+					}
+					
+					.clear {
+					  clear: both !important;
+					}
+					
+					.clear-left {
+					  clear: left !important;
+					}
+					
+					.clear-right {
+					  clear: right !important;
+					}
+					
+					.border {
+					  border: 1px solid #e8e8e8 !important;
+					}
+					
+					.border-none {
+					  border: 0 !important;
+					}
+					
+					.border-top {
+					  border-top: 1px solid #e8e8e8 !important;
+					}
+					
+					.border-bottom {
+					  border-bottom: 1px solid #e8e8e8 !important;
+					}
+					
+					.border-top-none {
+					  border-top: none !important;
+					}
+					
+					.border-bottom-none {
+					  border-bottom: none !important;
+					}
+					
+					.colour--white {
+					  color: #fff !important;
+					}
+					
+					.colour--white-light {
+					  color: #fcfcfc !important;
+					}
+					
+					.colour--white-dark {
+					  color: #f3f3f3 !important;
+					}
+					
+					.colour--grey-darker {
+					  color: #333 !important;
+					}
+					
+					.colour--black {
+					  color: #000 !important;
+					}
+					
+					.bg--white {
+					  background-color: #fff !important;
+					}
+					
+					.bg--white-light {
+					  background-color: #fcfcfc !important;
+					}
+					
+					.bg--white-dark {
+					  background-color: #f3f3f3 !important;
+					}
+					
+					.bg--grey-darker {
+					  background-color: #333 !important;
+					}
+					
+					.bg--grey-lightest {
+					  background-color: #e8e8e8 !important;
+					}
+					
+					.bg--black {
+					  background-color: #000 !important;
+					}
+					
+					.text-left {
+					  text-align: left !important;
+					}
+					
+					.text-center {
+					  text-align: center !important;
+					}
+					
+					.text-right {
+					  text-align: right !important;
+					}
+					
+					.font-weight-thin {
+					  font-weight: 100 !important;
+					}
+					
+					.font-weight-light {
+					  font-weight: 300 !important;
+					}
+					
+					.font-weight-normal {
+					  font-weight: normal !important;
+					}
+					
+					.font-weight-bold {
+					  font-weight: bold !important;
+					}
+					
+					.font-weight-black {
+					  font-weight: 900 !important;
+					}
+					
+					.text-xsmall {
+					  font-size: 75%;
+					}
+					
+					small,
+					.text-small {
+					  font-size: 87.5%;
+					}
+					
+					.text-large {
+					  font-size: 112.5%;
+					}
+					
+					.text-xlarge {
+					  font-size: 125%;
+					}
+					
+					.word-wrap {
+					  -webkit-hyphens: auto;
+					  -ms-hyphens: auto;
+					  hyphens: auto;
+					  word-break: break-word;
+					  overflow-wrap: break-word;
+					  word-wrap: break-word;
+					}
+					
+					.ellipsis {
+					  overflow: hidden;
+					  text-overflow: ellipsis;
+					  white-space: nowrap;
+					}
+					
+					.disclaimer {
+					  color: #b1b1b1;
+					}
+					
+					.colour--red {
+					  color: #cf142b !important;
+					}
+					
+					.colour--clear-pink {
+					  color: #ee9193 !important;
+					}
+					
+					.colour--clear-mango {
+					  color: #f8bf56 !important;
+					}
+					
+					.colour--clear-green {
+					  color: #b7d24e !important;
+					}
+					
+					.colour--clear-turquoise {
+					  color: #4bbdcd !important;
+					}
+					
+					.colour--clear-blue {
+					  color: #74bde7 !important;
+					}
+					
+					.colour--dull-pink {
+					  color: #e36d76 !important;
+					}
+					
+					.colour--dull-mango {
+					  color: #c5a983 !important;
+					}
+					
+					.colour--dull-green {
+					  color: #759b6b !important;
+					}
+					
+					.colour--dull-turquoise {
+					  color: #38958e !important;
+					}
+					
+					.colour--dull-blue {
+					  color: #4e92ab !important;
+					}
+					
+					.colour--pastel-pink {
+					  color: #f8ccc9 !important;
+					}
+					
+					.colour--pastel-mango {
+					  color: #fde0aa !important;
+					}
+					
+					.colour--pastel-green {
+					  color: #d7ddb1 !important;
+					}
+					
+					.colour--pastel-turquoise {
+					  color: #b5dfe8 !important;
+					}
+					
+					.colour--pastel-blue {
+					  color: #c1def5 !important;
+					}
+					
+					.bg--red {
+					  background-color: #cf142b !important;
+					}
+					
+					.bg--clear-pink {
+					  background-color: #ee9193 !important;
+					}
+					
+					.bg--clear-mango {
+					  background-color: #f8bf56 !important;
+					}
+					
+					.bg--clear-green {
+					  background-color: #b7d24e !important;
+					}
+					
+					.bg--clear-turquoise {
+					  background-color: #4bbdcd !important;
+					}
+					
+					.bg--clear-blue {
+					  background-color: #74bde7 !important;
+					}
+					
+					.bg--dull-pink {
+					  background-color: #e36d76 !important;
+					}
+					
+					.bg--dull-mango {
+					  background-color: #c5a983 !important;
+					}
+					
+					.bg--dull-green {
+					  background-color: #759b6b !important;
+					}
+					
+					.bg--dull-turquoise {
+					  background-color: #38958e !important;
+					}
+					
+					.bg--dull-blue {
+					  background-color: #4e92ab !important;
+					}
+					
+					.bg--pastel-pink {
+					  background-color: #f8ccc9 !important;
+					}
+					
+					.bg--pastel-mango {
+					  background-color: #fde0aa !important;
+					}
+					
+					.bg--pastel-green {
+					  background-color: #d7ddb1 !important;
+					}
+					
+					.bg--pastel-turquoise {
+					  background-color: #b5dfe8 !important;
+					}
+					
+					.bg--pastel-blue {
+					  background-color: #c1def5 !important;
+					}
+					
+					.action--black.btn {
+					  background-color: #333;
+					}
+					
+					.action--black.btn:after {
+					  background-color: rgba(51, 51, 51, 0.3);
+					}
+					
+					a:focus .action--black.btn,
+					a:hover .action--black.btn,
+					button:focus .action--black.btn,
+					button:hover .action--black.btn, .action--black.btn:focus, .action--black.btn:hover {
+					  background-color: #1a1a1a;
+					}
+					
+					.action--black.btn-ghost {
+					  border-color: #666;
+					  color: #333;
+					}
+					
+					.action--black.btn-ghost:after {
+					  border-color: rgba(102, 102, 102, 0.3);
+					}
+					
+					a:focus .action--black.btn-ghost,
+					a:hover .action--black.btn-ghost,
+					button:focus .action--black.btn-ghost,
+					button:hover .action--black.btn-ghost, .action--black.btn-ghost:focus, .action--black.btn-ghost:hover {
+					  color: #333;
+					}
+					
+					.action--black.cta {
+					  color: #333;
+					}
+					
+					.action--black.cta:focus, .action--black.cta:hover {
+					  color: #1a1a1a;
+					}
+					
+					.action--dark-grey.btn {
+					  background-color: #717171;
+					}
+					
+					.action--dark-grey.btn:after {
+					  background-color: rgba(113, 113, 113, 0.3);
+					}
+					
+					a:focus .action--dark-grey.btn,
+					a:hover .action--dark-grey.btn,
+					button:focus .action--dark-grey.btn,
+					button:hover .action--dark-grey.btn, .action--dark-grey.btn:focus, .action--dark-grey.btn:hover {
+					  background-color: #585858;
+					}
+					
+					.action--dark-grey.btn-ghost {
+					  border-color: #717171;
+					  color: #717171;
+					}
+					
+					.action--dark-grey.btn-ghost:after {
+					  border-color: rgba(113, 113, 113, 0.3);
+					}
+					
+					a:focus .action--dark-grey.btn-ghost,
+					a:hover .action--dark-grey.btn-ghost,
+					button:focus .action--dark-grey.btn-ghost,
+					button:hover .action--dark-grey.btn-ghost, .action--dark-grey.btn-ghost:focus, .action--dark-grey.btn-ghost:hover {
+					  color: #717171;
+					}
+					
+					.action--dark-grey.cta {
+					  color: #717171;
+					}
+					
+					.action--dark-grey.cta:focus, .action--dark-grey.cta:hover {
+					  color: #585858;
+					}
+					
+					.action--white.btn {
+					  background-color: #fff;
+					}
+					
+					.action--white.btn:after {
+					  background-color: rgba(255, 255, 255, 0.3);
+					}
+					
+					a:focus .action--white.btn,
+					a:hover .action--white.btn,
+					button:focus .action--white.btn,
+					button:hover .action--white.btn, .action--white.btn:focus, .action--white.btn:hover {
+					  background-color: #e6e6e6;
+					}
+					
+					.action--white.btn-ghost {
+					  border-color: #fff;
+					  color: #fff;
+					}
+					
+					.action--white.btn-ghost:after {
+					  border-color: rgba(102, 102, 102, 0.3);
+					}
+					
+					a:focus .action--white.btn-ghost,
+					a:hover .action--white.btn-ghost,
+					button:focus .action--white.btn-ghost,
+					button:hover .action--white.btn-ghost, .action--white.btn-ghost:focus, .action--white.btn-ghost:hover {
+					  color: #fff;
+					}
+					
+					.action--white.cta {
+					  color: #fff;
+					}
+					
+					.action--white.cta:focus, .action--white.cta:hover {
+					  opacity: 0.8;
+					}
+					
+					.action--red.btn {
+					  background-color: #cf142b;
+					}
+					
+					a:focus .action--red.btn,
+					a:hover .action--red.btn,
+					button:focus .action--red.btn,
+					button:hover .action--red.btn, .action--red.btn:focus, .action--red.btn:hover {
+					  background-color: #890d1d;
+					}
+					
+					.action--red.btn-ghost {
+					  border-color: #cf142b;
+					  color: #cf142b;
+					}
+					
+					a:focus .action--red.btn-ghost,
+					a:hover .action--red.btn-ghost,
+					button:focus .action--red.btn-ghost,
+					button:hover .action--red.btn-ghost, .action--red.btn-ghost:focus, .action--red.btn-ghost:hover {
+					  color: #cf142b;
+					}
+					
+					.action--red.cta {
+					  color: #cf142b;
+					}
+					
+					.action--red.cta:focus, .action--red.cta:hover {
+					  color: #cf142b;
+					}
+					
+					.action--pink.btn {
+					  background-color: #ee9193;
+					}
+					
+					.action--pink.btn:after {
+					  background-color: rgba(238, 145, 147, 0.3);
+					}
+					
+					a:focus .action--pink.btn,
+					a:hover .action--pink.btn,
+					button:focus .action--pink.btn,
+					button:hover .action--pink.btn, .action--pink.btn:focus, .action--pink.btn:hover {
+					  background-color: #e76568;
+					}
+					
+					.action--pink.btn-ghost {
+					  border-color: #ee9193;
+					  color: #ee9193;
+					}
+					
+					.action--pink.btn-ghost:after {
+					  border-color: rgba(238, 145, 147, 0.3);
+					}
+					
+					a:focus .action--pink.btn-ghost,
+					a:hover .action--pink.btn-ghost,
+					button:focus .action--pink.btn-ghost,
+					button:hover .action--pink.btn-ghost, .action--pink.btn-ghost:focus, .action--pink.btn-ghost:hover {
+					  color: #ee9193;
+					}
+					
+					.action--pink.cta {
+					  color: #ee9193;
+					}
+					
+					.action--pink.cta:focus, .action--pink.cta:hover {
+					  color: #e76568;
+					}
+					
+					.action--mango.btn {
+					  background-color: #f8bf56;
+					}
+					
+					.action--mango.btn:after {
+					  background-color: rgba(248, 191, 86, 0.3);
+					}
+					
+					a:focus .action--mango.btn,
+					a:hover .action--mango.btn,
+					button:focus .action--mango.btn,
+					button:hover .action--mango.btn, .action--mango.btn:focus, .action--mango.btn:hover {
+					  background-color: #f6ac25;
+					}
+					
+					.action--mango.btn-ghost {
+					  border-color: #f8bf56;
+					  color: #f8bf56;
+					}
+					
+					.action--mango.btn-ghost:after {
+					  border-color: rgba(248, 191, 86, 0.3);
+					}
+					
+					a:focus .action--mango.btn-ghost,
+					a:hover .action--mango.btn-ghost,
+					button:focus .action--mango.btn-ghost,
+					button:hover .action--mango.btn-ghost, .action--mango.btn-ghost:focus, .action--mango.btn-ghost:hover {
+					  color: #f8bf56;
+					}
+					
+					.action--mango.cta {
+					  color: #f8bf56;
+					}
+					
+					.action--mango.cta:focus, .action--mango.cta:hover {
+					  color: #f6ac25;
+					}
+					
+					.action--green.btn {
+					  background-color: #b7d24e;
+					}
+					
+					.action--green.btn:after {
+					  background-color: rgba(183, 210, 78, 0.3);
+					}
+					
+					a:focus .action--green.btn,
+					a:hover .action--green.btn,
+					button:focus .action--green.btn,
+					button:hover .action--green.btn, .action--green.btn:focus, .action--green.btn:hover {
+					  background-color: #a0bd30;
+					}
+					
+					.action--green.btn-ghost {
+					  border-color: #b7d24e;
+					  color: #b7d24e;
+					}
+					
+					.action--green.btn-ghost:after {
+					  border-color: rgba(183, 210, 78, 0.3);
+					}
+					
+					a:focus .action--green.btn-ghost,
+					a:hover .action--green.btn-ghost,
+					button:focus .action--green.btn-ghost,
+					button:hover .action--green.btn-ghost, .action--green.btn-ghost:focus, .action--green.btn-ghost:hover {
+					  color: #b7d24e;
+					}
+					
+					.action--green.cta {
+					  color: #b7d24e;
+					}
+					
+					.action--green.cta:focus, .action--green.cta:hover {
+					  color: #a0bd30;
+					}
+					
+					.action--turquoise.btn {
+					  background-color: #4bbdcd;
+					}
+					
+					.action--turquoise.btn:after {
+					  background-color: rgba(75, 189, 205, 0.3);
+					}
+					
+					a:focus .action--turquoise.btn,
+					a:hover .action--turquoise.btn,
+					button:focus .action--turquoise.btn,
+					button:hover .action--turquoise.btn, .action--turquoise.btn:focus, .action--turquoise.btn:hover {
+					  background-color: #32a3b3;
+					}
+					
+					.action--turquoise.btn-ghost {
+					  border-color: #4bbdcd;
+					  color: #4bbdcd;
+					}
+					
+					.action--turquoise.btn-ghost:after {
+					  border-color: rgba(75, 189, 205, 0.3);
+					}
+					
+					a:focus .action--turquoise.btn-ghost,
+					a:hover .action--turquoise.btn-ghost,
+					button:focus .action--turquoise.btn-ghost,
+					button:hover .action--turquoise.btn-ghost, .action--turquoise.btn-ghost:focus, .action--turquoise.btn-ghost:hover {
+					  color: #4bbdcd;
+					}
+					
+					.action--turquoise.cta {
+					  color: #4bbdcd;
+					}
+					
+					.action--turquoise.cta:focus, .action--turquoise.cta:hover {
+					  color: #32a3b3;
+					}
+					
+					.action--blue.btn {
+					  background-color: #74bde7;
+					}
+					
+					.action--blue.btn:after {
+					  background-color: rgba(116, 189, 231, 0.3);
+					}
+					
+					a:focus .action--blue.btn,
+					a:hover .action--blue.btn,
+					button:focus .action--blue.btn,
+					button:hover .action--blue.btn, .action--blue.btn:focus, .action--blue.btn:hover {
+					  background-color: #49a8df;
+					}
+					
+					.action--blue.btn-ghost {
+					  border-color: #74bde7;
+					  color: #74bde7;
+					}
+					
+					.action--blue.btn-ghost:after {
+					  border-color: rgba(116, 189, 231, 0.3);
+					}
+					
+					a:focus .action--blue.btn-ghost,
+					a:hover .action--blue.btn-ghost,
+					button:focus .action--blue.btn-ghost,
+					button:hover .action--blue.btn-ghost, .action--blue.btn-ghost:focus, .action--blue.btn-ghost:hover {
+					  color: #74bde7;
+					}
+					
+					.action--blue.cta {
+					  color: #74bde7;
+					}
+					
+					.action--blue.cta:focus, .action--blue.cta:hover {
+					  color: #49a8df;
+					}
+					
+					/* variable overrides */
+					/*
+					 * overrides for vendor variables
+					 *
+					 * for this to work, variables defined in vendors scss' need to have !default on the end of them
+					 * other overrides that aren't variables should go into [_overrides.scss]
+					 *
+					 */
+					/*======================================
+					  Selectric v1.13.0
+					======================================*/
+					.selectric-wrapper {
+					  position: relative;
+					  cursor: pointer;
+					}
+					
+					.selectric-responsive {
+					  width: 100%;
+					}
+					
+					.selectric {
+					  border: 1px solid #DDD;
+					  border-radius: 0px;
+					  background: #F8F8F8;
+					  position: relative;
+					  overflow: hidden;
+					}
+					
+					.selectric .label {
+					  display: block;
+					  white-space: nowrap;
+					  overflow: hidden;
+					  text-overflow: ellipsis;
+					  margin: 0 38px 0 10px;
+					  font-size: 12px;
+					  line-height: 38px;
+					  color: #444;
+					  height: 38px;
+					  -webkit-user-select: none;
+					  -moz-user-select: none;
+					  -ms-user-select: none;
+					  user-select: none;
+					}
+					
+					.selectric .button {
+					  display: block;
+					  position: absolute;
+					  right: 0;
+					  top: 0;
+					  width: 38px;
+					  height: 38px;
+					  line-height: 38px;
+					  background-color: #F8f8f8;
+					  color: #BBB;
+					  text-align: center;
+					  font: 0/0 a;
+					  *font: 20px/38px Lucida Sans Unicode, Arial Unicode MS, Arial;
+					}
+					
+					.selectric .button:after {
+					  content: " ";
+					  position: absolute;
+					  top: 0;
+					  right: 0;
+					  bottom: 0;
+					  left: 0;
+					  margin: auto;
+					  width: 0;
+					  height: 0;
+					  border: 4px solid transparent;
+					  border-top-color: #BBB;
+					  border-bottom: none;
+					}
+					
+					.selectric-focus .selectric {
+					  border-color: #aaaaaa;
+					}
+					
+					.selectric-hover .selectric {
+					  border-color: #c4c4c4;
+					}
+					
+					.selectric-hover .selectric .button {
+					  color: #a2a2a2;
+					}
+					
+					.selectric-hover .selectric .button:after {
+					  border-top-color: #a2a2a2;
+					}
+					
+					.selectric-open {
+					  z-index: 9999;
+					}
+					
+					.selectric-open .selectric {
+					  border-color: #c4c4c4;
+					}
+					
+					.selectric-open .selectric-items {
+					  display: block;
+					}
+					
+					.selectric-disabled {
+					  filter: alpha(opacity=50);
+					  opacity: 0.5;
+					  cursor: default;
+					  -webkit-user-select: none;
+					  -moz-user-select: none;
+					  -ms-user-select: none;
+					  user-select: none;
+					}
+					
+					.selectric-hide-select {
+					  position: relative;
+					  overflow: hidden;
+					  width: 0;
+					  height: 0;
+					}
+					
+					.selectric-hide-select select {
+					  position: absolute;
+					  left: -100%;
+					}
+					
+					.selectric-hide-select.selectric-is-native {
+					  position: absolute;
+					  width: 100%;
+					  height: 100%;
+					  z-index: 10;
+					}
+					
+					.selectric-hide-select.selectric-is-native select {
+					  position: absolute;
+					  top: 0;
+					  left: 0;
+					  right: 0;
+					  height: 100%;
+					  width: 100%;
+					  border: none;
+					  z-index: 1;
+					  -webkit-box-sizing: border-box;
+					  box-sizing: border-box;
+					  opacity: 0;
+					}
+					
+					.selectric-input {
+					  position: absolute !important;
+					  top: 0 !important;
+					  left: 0 !important;
+					  overflow: hidden !important;
+					  clip: rect(0, 0, 0, 0) !important;
+					  margin: 0 !important;
+					  padding: 0 !important;
+					  width: 1px !important;
+					  height: 1px !important;
+					  outline: none !important;
+					  border: none !important;
+					  *font: 0/0 a !important;
+					  background: none !important;
+					}
+					
+					.selectric-temp-show {
+					  position: absolute !important;
+					  visibility: hidden !important;
+					  display: block !important;
+					}
+					
+					/* Items box */
+					.selectric-items {
+					  display: none;
+					  position: absolute;
+					  top: 100%;
+					  left: 0;
+					  background: #F8F8F8;
+					  border: 1px solid #c4c4c4;
+					  z-index: -1;
+					  -webkit-box-shadow: 0 0 10px -6px;
+					  box-shadow: 0 0 10px -6px;
+					}
+					
+					.selectric-items .selectric-scroll {
+					  height: 100%;
+					  overflow: auto;
+					}
+					
+					.selectric-above .selectric-items {
+					  top: auto;
+					  bottom: 100%;
+					}
+					
+					.selectric-items ul, .selectric-items li {
+					  list-style: none;
+					  padding: 0;
+					  margin: 0;
+					  font-size: 12px;
+					  line-height: 20px;
+					  min-height: 20px;
+					}
+					
+					.selectric-items li {
+					  display: block;
+					  padding: 10px;
+					  color: #666;
+					  cursor: pointer;
+					}
+					
+					.selectric-items li.selected {
+					  background: #E0E0E0;
+					  color: #444;
+					}
+					
+					.selectric-items li.highlighted {
+					  background: #D0D0D0;
+					  color: #444;
+					}
+					
+					.selectric-items li:hover {
+					  background: #D5D5D5;
+					  color: #444;
+					}
+					
+					.selectric-items .disabled {
+					  filter: alpha(opacity=50);
+					  opacity: 0.5;
+					  cursor: default !important;
+					  background: none !important;
+					  color: #666 !important;
+					  -webkit-user-select: none;
+					  -moz-user-select: none;
+					  -ms-user-select: none;
+					  user-select: none;
+					}
+					
+					.selectric-items .selectric-group .selectric-group-label {
+					  font-weight: bold;
+					  padding-left: 10px;
+					  cursor: default;
+					  -webkit-user-select: none;
+					  -moz-user-select: none;
+					  -ms-user-select: none;
+					  user-select: none;
+					  background: none;
+					  color: #444;
+					}
+					
+					.selectric-items .selectric-group.disabled li {
+					  filter: alpha(opacity=100);
+					  opacity: 1;
+					}
+					
+					.selectric-items .selectric-group li {
+					  padding-left: 25px;
+					}
+					
+					/* overrides */
+					.ui-datepicker {
+					  display: none;
+					  width: 320px;
+					  padding: 12px;
+					  background-color: #fcfcfc;
+					  -webkit-box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
+					  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
+					  border-radius: 3px;
+					}
+					
+					.ui-datepicker .ui-datepicker-header {
+					  position: relative;
+					  padding: 0.2em 0;
+					}
+					
+					.ui-datepicker .ui-datepicker-prev,
+					.ui-datepicker .ui-datepicker-next {
+					  position: absolute;
+					  top: 2px;
+					  width: 1.8em;
+					  height: 1.8em;
+					  cursor: pointer;
+					}
+					
+					.ui-datepicker .ui-datepicker-prev:before,
+					.ui-datepicker .ui-datepicker-next:before {
+					  font-family: ricons !important;
+					  font-style: normal;
+					  font-variant: normal;
+					  font-weight: normal;
+					  line-height: 1;
+					  text-transform: none;
+					  speak: none;
+					  -webkit-font-smoothing: antialiased;
+					  -moz-osx-font-smoothing: grayscale;
+					  position: absolute;
+					  top: 6px;
+					}
+					
+					.ui-datepicker .ui-datepicker-prev span,
+					.ui-datepicker .ui-datepicker-next span {
+					  display: none;
+					}
+					
+					.ui-datepicker .ui-datepicker-prev-hover,
+					.ui-datepicker .ui-datepicker-next-hover {
+					  top: 1px;
+					}
+					
+					.ui-datepicker .ui-datepicker-prev {
+					  left: 0;
+					}
+					
+					.ui-datepicker .ui-datepicker-prev:before {
+					  content: "n$";
+					  left: 6px;
+					}
+					
+					.ui-datepicker .ui-datepicker-next {
+					  right: 0;
+					}
+					
+					.ui-datepicker .ui-datepicker-next:before {
+					  content: "n$";
+					  right: 6px;
+					}
+					
+					.ui-datepicker .ui-datepicker-title {
+					  margin: 0 2.3em;
+					  line-height: 1.8em;
+					  text-align: center;
+					  color: #333;
+					  font-weight: bold;
+					}
+					
+					.ui-datepicker .ui-datepicker-title select {
+					  margin: 1px 0;
+					  font-size: 1em;
+					}
+					
+					.ui-datepicker select.ui-datepicker-month,
+					.ui-datepicker select.ui-datepicker-year {
+					  width: 45%;
+					}
+					
+					.ui-datepicker table {
+					  width: 100%;
+					  margin: 0;
+					  border-collapse: collapse;
+					  font-size: 0.9em;
+					}
+					
+					.ui-datepicker th {
+					  padding: 0.7em 0.3em;
+					  border: 0;
+					  color: #333;
+					  font-weight: normal;
+					  text-align: center;
+					}
+					
+					.ui-datepicker td {
+					  padding: 1px;
+					  border: 0;
+					}
+					
+					.ui-datepicker td span,
+					.ui-datepicker td a {
+					  display: block;
+					  padding: 0.2em;
+					  text-align: center;
+					  text-decoration: none;
+					}
+					
+					.ui-datepicker .ui-datepicker-calendar .ui-state-default {
+					  color: #717171;
+					}
+					
+					.ui-datepicker .ui-datepicker-calendar .ui-state-hover {
+					  background-color: #e8e8e8;
+					}
+					
+					.ui-datepicker .ui-datepicker-calendar .ui-state-active {
+					  background-color: #717171;
+					  color: #fff;
+					}
+					
+					.ui-datepicker .ui-datepicker-calendar .ui-state-highlight {
+					  background-color: #e8e8e8;
+					  color: #717171;
+					}
+					
+					.ui-datepicker .ui-datepicker-buttonpane {
+					  margin: 0.7em 0 0;
+					  padding: 0 0.2em;
+					  border-right: 0;
+					  border-bottom: 0;
+					  border-left: 0;
+					  background-image: none;
+					}
+					
+					.ui-datepicker .ui-datepicker-buttonpane button {
+					  width: auto;
+					  margin: 0.5em 0.2em 0.4em;
+					  padding: 0.2em 0.6em;
+					  float: right;
+					  overflow: visible;
+					  cursor: pointer;
+					}
+					
+					.ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current {
+					  float: left;
+					}
+					
+					.lazyload,
+					.lazyloading {
+					  background: url("/-/media/Project/Ricoh/Knowledge/RicohTheme/images/fallbacks/spinner.svg?v=1826") no-repeat 50% 50% !important;
+					  background-size: 25% 25% !important;
+					}
+					
+					.lazyloaded {
+					  -webkit-animation-name: fade-in;
+					  animation-name: fade-in;
+					  -webkit-animation-duration: 0.4s;
+					  animation-duration: 0.4s;
+					  -webkit-animation-fill-mode: forwards;
+					  animation-fill-mode: forwards;
+					  -webkit-animation-timing-function: ease-in-out;
+					  animation-timing-function: ease-in-out;
+					  -webkit-animation-iteration-count: 1;
+					  animation-iteration-count: 1;
+					  -webkit-animation-direction: normal;
+					  animation-direction: normal;
+					  opacity: 0;
+					}
+					
+					.lazyloaded.lazyload--no-animation {
+					  -webkit-animation: none;
+					  animation: none;
+					  opacity: 1;
+					}
+					
+					.ie .lazyloaded,
+					.ie-edge .lazyloaded {
+					  -webkit-animation: none;
+					  animation: none;
+					  opacity: 1 !important;
+					}
+					
+					.flickity-prev-next-button {
+					  position: absolute;
+					  top: 50%;
+					  width: 42px;
+					  height: 42px;
+					  -webkit-transform: translateY(-50%);
+					  transform: translateY(-50%);
+					  border: 0;
+					  border-radius: 0;
+					  background: transparent;
+					  opacity: 0.5;
+					  -webkit-transition: opacity 0.3s ease-in-out;
+					  transition: opacity 0.3s ease-in-out;
+					  will-change: opacity;
+					}
+					
+					.flickity-prev-next-button:focus {
+					  -webkit-box-shadow: none;
+					  box-shadow: none;
+					}
+					
+					.flickity-prev-next-button:focus .arrow {
+					  fill: #cf142b;
+					}
+					
+					.flickity-prev-next-button:hover, .flickity-prev-next-button:active {
+					  background-color: transparent;
+					  opacity: 1;
+					}
+					
+					.flickity-prev-next-button:disabled {
+					  opacity: 0.1;
+					}
+					
+					.flickity-prev-next-button.previous {
+					  left: 12px;
+					}
+					
+					.flickity-prev-next-button.next {
+					  right: 12px;
+					}
+					
+					.flickity-prev-next-button svg {
+					  position: absolute;
+					  top: 0;
+					  left: 0;
+					  width: 100%;
+					  height: 100%;
+					}
+					
+					.flickity-prev-next-button .arrow {
+					  fill: #fff;
+					}
+					
+					.flickity-page-dots {
+					  bottom: 15px;
+					}
+					
+					.flickity-page-dots .dot {
+					  margin: 0 3px;
+					  border: 2px solid #fff;
+					  background-color: transparent;
+					  opacity: 1;
+					  -webkit-transition: background-color 0.3s ease-in-out;
+					  transition: background-color 0.3s ease-in-out;
+					}
+					
+					.flickity-page-dots .dot:hover {
+					  background-color: #fff;
+					}
+					
+					.flickity-page-dots .dot.is-selected {
+					  border-color: #cf142b;
+					  background-color: #cf142b;
+					}
+					
+					.selectric {
+					  border: 0;
+					  border-bottom: 1px solid #e8e8e8;
+					  background-color: transparent;
+					}
+					
+					.selectric-open .selectric,
+					.selectric-hover .selectric {
+					  border-bottom-color: #e8e8e8;
+					}
+					
+					.selectric .label {
+					  height: 36px;
+					  margin-left: 0;
+					  padding: 0;
+					  color: #717171;
+					  font-size: 1rem;
+					  font-weight: normal;
+					  line-height: 36px;
+					}
+					
+					.selectric-btn {
+					  position: absolute;
+					  top: 50%;
+					  right: 0;
+					  -webkit-transform: translateY(-50%);
+					  transform: translateY(-50%);
+					}
+					
+					.selectric-btn .ricon {
+					  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+					  transition: -webkit-transform 0.2s ease-in-out;
+					  transition: transform 0.2s ease-in-out;
+					  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+					}
+					
+					.selectric-open .selectric-btn .ricon {
+					  -webkit-transform: rotate(-180deg);
+					  transform: rotate(-180deg);
+					}
+					
+					.selectric-items {
+					  top: calc(100% + 24px);
+					  padding: 18px 0;
+					  border: 1px solid #e8e8e8;
+					  border-radius: 3px;
+					  background-color: #f3f3f3;
+					  -webkit-box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.05);
+					  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.05);
+					}
+					
+					.selectric-items:focus {
+					  outline: 0;
+					}
+					
+					.selectric-items:before {
+					  position: absolute;
+					  top: -11px;
+					  left: 50%;
+					  width: 20px;
+					  height: 20px;
+					  margin-left: -10px;
+					  -webkit-transform: scaleX(1.5) rotate(45deg);
+					  transform: scaleX(1.5) rotate(45deg);
+					  border-top: 1px solid #e8e8e8;
+					  border-left: 1px solid #e8e8e8;
+					  background: #f3f3f3;
+					  content: "";
+					}
+					
+					.selectric-items li {
+					  padding: 6px 24px;
+					  color: #717171 !important;
+					  font-size: 1rem;
+					  -webkit-transition: all 0.2s ease-in-out;
+					  transition: all 0.2s ease-in-out;
+					}
+					
+					.selectric-items li:focus, .selectric-items li:hover, .selectric-items li.highlighted {
+					  background-color: #e8e8e8;
+					  color: #333 !important;
+					}
+					
+					.selectric-items li.disabled {
+					  color: #b1b1b1 !important;
+					}
+					
+					.selectric-above .selectric-items {
+					  bottom: calc(100% + 24px);
+					}
+					
+					.selectric-above .selectric-items:before {
+					  top: auto;
+					  bottom: -11px;
+					  border-top: 0;
+					  border-right: 1px solid #e8e8e8;
+					  border-bottom: 1px solid #e8e8e8;
+					  border-left: 0;
+					}
+					
+					.noUi-target {
+					  border-radius: 3px;
+					  border-color: #e8e8e8;
+					  background: #fff;
+					  -webkit-box-shadow: none;
+					  box-shadow: none;
+					}
+					
+					.noUi-target:before, .noUi-target:after {
+					  position: absolute;
+					  top: -1px;
+					  bottom: -1px;
+					  width: 36px;
+					  border: 1px solid #e8e8e8;
+					  background: #fff;
+					  content: "";
+					}
+					
+					.noUi-target:before {
+					  left: -12px;
+					  border-right: 0;
+					  border-radius: 3px 0 0 3px;
+					}
+					
+					.noUi-target:after {
+					  right: -12px;
+					  border-left: 0;
+					  border-radius: 0 3px 3px 0;
+					}
+					
+					.noUi-connect {
+					  background: #e8e8e8;
+					  -webkit-box-shadow: inset 0 0 1px rgba(51, 51, 51, 0.45);
+					  box-shadow: inset 0 0 1px rgba(51, 51, 51, 0.45);
+					}
+					
+					.noUi-horizontal {
+					  height: 12px;
+					}
+					
+					.noUi-horizontal .noUi-handle {
+					  top: -8px;
+					  left: -12px;
+					  width: 24px;
+					  height: 24px;
+					  border-color: #e8e8e8;
+					  -webkit-box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
+					  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
+					}
+					
+					.noUi-horizontal .noUi-handle:focus {
+					  border-color: #333;
+					  outline: 0;
+					}
+					
+					.noUi-horizontal .noUi-handle:before, .noUi-horizontal .noUi-handle:after {
+					  top: 8px;
+					  bottom: 6px;
+					  height: auto;
+					  background: #e8e8e8;
+					}
+					
+					.noUi-horizontal .noUi-handle:before {
+					  right: 9px;
+					  left: auto;
+					}
+					
+					.noUi-horizontal .noUi-handle:after {
+					  left: 9px;
+					}
+					
+					@media screen and (min-width: 768px) {
+					  .noUI-target {
+					    background: 0;
+					  }
+					}
+					
+					/*! site */
+					body {
+					  background-color: #fff;
+					  -webkit-transition: opacity 0.3s ease-in;
+					  transition: opacity 0.3s ease-in;
+					}
+					
+					body.jsLoaded {
+					  opacity: 1;
+					}
+					
+					.body--nav-open {
+					  height: 100vh;
+					  overflow: hidden;
+					}
+					
+					@media screen and (min-width: 960px) {
+					  .body--nav-open {
+					    height: auto;
+					  }
+					}
+					
+					.container-fluid {
+					  width: 100%;
+					  max-width: 1920px;
+					  margin: 0 auto;
+					  overflow: hidden;
+					  background-position: 50% 50%;
+					  background-repeat: no-repeat;
+					  background-size: cover;
+					  -webkit-transition: width 0.1s ease-out;
+					  transition: width 0.1s ease-out;
+					}
+					
+					.container-fluid--full-width {
+					  max-width: none;
+					}
+					
+					.container {
+					  max-width: 1296px;
+					  margin-left: auto;
+					  margin-right: auto;
+					  position: relative;
+					  padding: 0 12px;
+					  clear: both;
+					  background-position: 50% 50%;
+					  background-repeat: no-repeat;
+					  background-size: cover;
+					  -webkit-transition: width 0.1s ease-out;
+					  transition: width 0.1s ease-out;
+					}
+					
+					.container:after {
+					  display: table;
+					  clear: both;
+					  content: "";
+					}
+					
+					.container:after {
+					  content: " ";
+					  display: block;
+					  clear: both;
+					}
+					
+					.container--no-padding {
+					  padding: 0;
+					}
+					
+					.container--narrow {
+					  max-width: 834px;
+					}
+					
+					.container-two-col {
+					  max-width: 1296px;
+					  margin-left: auto;
+					  margin-right: auto;
+					  position: relative;
+					  padding: 0 12px;
+					  clear: both;
+					  background-position: 50% 50%;
+					  background-repeat: no-repeat;
+					  background-size: cover;
+					  -webkit-transition: width 0.1s ease-out;
+					  transition: width 0.1s ease-out;
+					}
+					
+					.container-two-col:after {
+					  display: table;
+					  clear: both;
+					  content: "";
+					}
+					
+					.container-two-col:after {
+					  content: " ";
+					  display: block;
+					  clear: both;
+					}
+					
+					.container-two-col > .component-content:after {
+					  display: table;
+					  clear: both;
+					  content: "";
+					}
+					
+					.container-two-col--fluid {
+					  max-width: 1920px;
+					  padding-right: 0;
+					  padding-left: 0;
+					}
+					
+					.component--margin-small {
+					  margin-top: 24px;
+					  margin-bottom: 24px;
+					}
+					
+					.component--margin-none {
+					  margin-top: 0;
+					  margin-bottom: 0;
+					}
+					
+					.component__title {
+					  font-size: 2.5rem;
+					  line-height: 1.2;
+					  margin-bottom: 24px;
+					}
+					
+					.component__subtitle {
+					  margin-top: 24px;
+					  margin-bottom: 24px;
+					  font-size: 16px;
+					}
+					
+					@media screen and (min-width: 768px) {
+					  .container-two-col .col-1 {
+					    width: 49.07339%;
+					    float: left;
+					    margin-right: 1.85322%;
+					  }
+					  .container-two-col .col-2 {
+					    width: 49.07339%;
+					    float: right;
+					    margin-right: 0;
+					  }
+					  .container-two-col--form .col-1 {
+					    width: 32.09785%;
+					    float: left;
+					    margin-right: 1.85322%;
+					    margin: 0 0 36px;
+					  }
+					  .container-two-col--form .col-2 {
+					    width: 66.04893%;
+					    float: right;
+					    margin-right: 0;
+					  }
+					  .component--margin-small {
+					    margin-top: 36px;
+					    margin-bottom: 36px;
+					  }
+					  .component--margin-none {
+					    margin-top: 0;
+					    margin-bottom: 0;
+					  }
+					}
+					
+					.browser-upgrade,
+					.noscript-container {
+					  position: relative;
+					  margin: 0;
+					  padding: 24px 18px;
+					  background: #a01021;
+					  color: #fff;
+					}
+					
+					.browser-upgrade p,
+					.noscript-container p {
+					  margin: 0 0 6px;
+					}
+					
+					.browser-upgrade p a,
+					.noscript-container p a {
+					  color: #fff;
+					  text-decoration: underline;
+					}
+					
+					.browser-upgrade p a:hover,
+					.noscript-container p a:hover {
+					  text-decoration: none;
+					  opacity: 0.7;
+					}
+					
+					@media screen and (min-width: 321px) {
+					  .browser-upgrade,
+					  .noscript-container {
+					    top: 0;
+					    right: 0;
+					    left: 0;
+					    margin: 0;
+					    text-align: center;
+					  }
+					}
+					
+					@media screen and (min-width: 321px) {
+					  .noscript-container {
+					    position: fixed;
+					    top: auto;
+					    bottom: 0;
+					  }
+					}
+					
+					/*! forms */
+					/*! variables */
+					/*! mixins */
+					/* variable overrides */
+					/*
+					 * overrides for vendor variables
+					 *
+					 * for this to work, variables defined in vendors scss' need to have !default on the end of them
+					 * other overrides that aren't variables should go into [_overrides.scss]
+					 *
+					 */
+					.form .row:after {
+					  display: table;
+					  clear: both;
+					  content: "";
+					}
+					
+					.form label {
+					  display: block;
+					}
+					
+					.form label:hover {
+					  cursor: pointer;
+					}
+					
+					.form label:focus {
+					  outline: 0;
+					}
+					
+					.form .form-control {
+					  width: 100%;
+					}
+					
+					.form .form-control:focus, .form .form-control:invalid {
+					  outline: 0;
+					  -webkit-box-shadow: none;
+					  box-shadow: none;
+					}
+					
+					.form select {
+					  -webkit-appearance: none;
+					  -moz-appearance: none;
+					  appearance: none;
+					}
+					
+					.form select::-ms-expand {
+					  display: none;
+					}
+					
+					.form select option {
+					  -webkit-appearance: none;
+					  -moz-appearance: none;
+					  appearance: none;
+					}
+					
+					.form textarea {
+					  font-family: frutiger, "frutiger linotype", univers, calibri, "gill sans", "gill sans mt", "myriad pro", myriad, "dejavu sans condensed", "liberation sans", "nimbus sans l", tahoma, geneva, "helvetica neue", helvetica, arial, sans-serif;
+					  resize: vertical;
+					}
+					
+					.form .required-field .control-label:after {
+					  color: #c9c9c9;
+					  font-weight: normal;
+					  content: "*";
+					  opacity: 0.85;
+					}
+					
+					.form .required-field .form-control:-moz-ui-invalid:not(output) {
+					  box-shadow: none;
+					}
+					
+					.form .required-field .form-control.validate:invalid:not(:focus) {
+					  border-bottom: 1px solid #cf142b;
+					}
+					
+					.form .required-field .form-control.validate:valid {
+					  border-bottom: 1px solid #529e00;
+					}
+					
+					.form--default {
+					  margin-right: -12px;
+					  margin-bottom: 24px;
+					  margin-left: -12px;
+					}
+					
+					.form--default .form-group,
+					.form--default .form-submit-border {
+					  position: relative;
+					  margin: 0 12px 24px;
+					  clear: both;
+					}
+					
+					.form--default .help-block {
+					  position: absolute;
+					  top: 100%;
+					  right: 0;
+					  left: 0;
+					  height: 0;
+					  color: #cf142b;
+					  font-size: 12px;
+					  line-height: 12px;
+					  opacity: 0;
+					  -webkit-transition: opacity 0.2s ease-in-out;
+					  transition: opacity 0.2s ease-in-out;
+					}
+					
+					.form--default label {
+					  margin-bottom: 6px;
+					  color: #333;
+					  font-size: 16px;
+					  font-weight: bold;
+					  line-height: 1.2;
+					}
+					
+					.form--default .form-control,
+					.form--default .selectric {
+					  height: 36px;
+					  margin-bottom: 6px;
+					  border-top: none;
+					  border-right: none;
+					  border-bottom: 1px solid #e8e8e8;
+					  border-left: none;
+					  background-color: #fff;
+					  color: #717171;
+					  font-size: 16px;
+					  line-height: 36px;
+					  -webkit-transition: border-color 0.2s ease-in-out;
+					  transition: border-color 0.2s ease-in-out;
+					}
+					
+					.form--default .form-control::-webkit-input-placeholder,
+					.form--default .selectric::-webkit-input-placeholder {
+					  color: #c9c9c9;
+					  font-weight: normal;
+					  opacity: 0.85;
+					}
+					
+					.form--default .form-control::-moz-placeholder,
+					.form--default .selectric::-moz-placeholder {
+					  color: #c9c9c9;
+					  font-weight: normal;
+					  opacity: 0.85;
+					}
+					
+					.form--default .form-control:-ms-input-placeholder,
+					.form--default .selectric:-ms-input-placeholder {
+					  color: #c9c9c9;
+					  font-weight: normal;
+					  opacity: 0.85;
+					}
+					
+					.form--default .form-control:focus, .form--default .form-control:active,
+					.form--default .selectric:focus,
+					.form--default .selectric:active {
+					  border-color: #b2b2b2;
+					}
+					
+					.form--default .form-control:focus:valid, .form--default .form-control:active:valid,
+					.form--default .selectric:focus:valid,
+					.form--default .selectric:active:valid {
+					  border-color: #529e00;
+					}
+					
+					.form--default .form-control[disabled],
+					.form--default .selectric[disabled] {
+					  padding-left: 12px;
+					  border: 1px solid #f3f3f3;
+					  background-color: #f3f3f3;
+					}
+					
+					.form--default .form-control[disabled]:hover,
+					.form--default .selectric[disabled]:hover {
+					  cursor: not-allowed;
+					}
+					
+					.form--default .form-select {
+					  background: url("/-/media/Project/Ricoh/Knowledge/RicohTheme/images/form/arrow-down.svg");
+					  background-position: 100% 50%;
+					  background-repeat: no-repeat;
+					  background-size: 18px auto;
+					}
+					
+					.form--default .form-select:focus, .form--default .form-select:active {
+					  background-image: url("/-/media/Project/Ricoh/Knowledge/RicohTheme/images/form/arrow-up.svg");
+					}
+					
+					.form--default .form-select:invalid {
+					  color: #717171;
+					}
+					
+					.form--default .form-textarea {
+					  height: 108px;
+					  line-height: 1.3;
+					}
+					
+					.form--default .form-group-check label,
+					.form--default .radio label,
+					.form--default .checkbox label {
+					  display: inline-block;
+					  position: relative;
+					  margin: 0;
+					  padding-top: 6px;
+					  color: #666;
+					  cursor: pointer;
+					  -webkit-transition: color 0.2s ease-in-out;
+					  transition: color 0.2s ease-in-out;
+					}
+					
+					.form--default .form-group-check label:focus,
+					.form--default .radio label:focus,
+					.form--default .checkbox label:focus {
+					  color: #000;
+					}
+					
+					.form--default .form-group-check.form-group > label,
+					.form--default .radio.form-group > label,
+					.form--default .checkbox.form-group > label {
+					  font-weight: bold;
+					}
+					
+					.form--default .form-group-check table,
+					.form--default .form-group-check tr,
+					.form--default .form-group-check td,
+					.form--default .radio table,
+					.form--default .radio tr,
+					.form--default .radio td,
+					.form--default .checkbox table,
+					.form--default .checkbox tr,
+					.form--default .checkbox td {
+					  display: block;
+					}
+					
+					.form--default .form-group-check td,
+					.form--default .radio td,
+					.form--default .checkbox td {
+					  padding: 0 0 6px;
+					}
+					
+					.form--default .form-group-check td:hover label,
+					.form--default .radio td:hover label,
+					.form--default .checkbox td:hover label {
+					  color: #333;
+					}
+					
+					.form--default .form-group-check td input[type="radio"],
+					.form--default .form-group-check td input[type="checkbox"],
+					.form--default .radio td input[type="radio"],
+					.form--default .radio td input[type="checkbox"],
+					.form--default .checkbox td input[type="radio"],
+					.form--default .checkbox td input[type="checkbox"] {
+					  display: inline-block;
+					  margin: 0 3px 0 0;
+					}
+					
+					.form--default .form-group-check td label,
+					.form--default .radio td label,
+					.form--default .checkbox td label {
+					  font-weight: normal;
+					}
+					
+					.form--default .form-group-check ul,
+					.form--default .radio ul,
+					.form--default .checkbox ul {
+					  margin: 0;
+					  list-style: none;
+					}
+					
+					.form--default .form-group-check ul input,
+					.form--default .radio ul input,
+					.form--default .checkbox ul input {
+					  position: absolute;
+					  top: 6px;
+					  left: 2px;
+					  clip: rect(0 0 0 0);
+					}
+					
+					.form--default .form-group-check ul input:focus ~ .check,
+					.form--default .radio ul input:focus ~ .check,
+					.form--default .checkbox ul input:focus ~ .check {
+					  border-color: #333;
+					}
+					
+					.form--default .form-group-check ul input:checked ~ .check,
+					.form--default .radio ul input:checked ~ .check,
+					.form--default .checkbox ul input:checked ~ .check {
+					  border-color: #cf142b;
+					}
+					
+					.form--default .form-group-check ul input:checked:focus ~ .check,
+					.form--default .radio ul input:checked:focus ~ .check,
+					.form--default .checkbox ul input:checked:focus ~ .check {
+					  border-color: #333;
+					}
+					
+					.form--default .form-group-check ul label,
+					.form--default .radio ul label,
+					.form--default .checkbox ul label {
+					  padding-left: 36px;
+					  font-weight: normal;
+					}
+					
+					.form--default .form-group-check li,
+					.form--default .radio li,
+					.form--default .checkbox li {
+					  position: relative;
+					  margin: 0;
+					  padding: 0 0 6px;
+					}
+					
+					.form--default .form-group-check li:hover label,
+					.form--default .radio li:hover label,
+					.form--default .checkbox li:hover label {
+					  color: #333;
+					}
+					
+					.form--default .form-group-check li:last-of-type,
+					.form--default .radio li:last-of-type,
+					.form--default .checkbox li:last-of-type {
+					  padding-bottom: 0;
+					}
+					
+					.form--default .form-group-check .check,
+					.form--default .radio .check,
+					.form--default .checkbox .check {
+					  display: block;
+					  position: absolute;
+					  top: 3px;
+					  left: 0;
+					  width: 24px;
+					  height: 24px;
+					  border: 1px solid #e8e8e8;
+					  background-color: #fff;
+					  font-size: 1.25rem;
+					  -webkit-transition: border 0.2s ease-in-out;
+					  transition: border 0.2s ease-in-out;
+					}
+					
+					.form--default .form-group-check .check:before,
+					.form--default .radio .check:before,
+					.form--default .checkbox .check:before {
+					  display: block;
+					  position: absolute;
+					  top: 5px;
+					  left: 5px;
+					  width: 12px;
+					  height: 12px;
+					  border-radius: 100%;
+					  content: "";
+					  -webkit-transition: background-color 0.2s ease-in-out;
+					  transition: background-color 0.2s ease-in-out;
+					}
+					
+					.form--default .radio > label {
+					  font-weight: normal;
+					}
+					
+					.form--default .radio input[type="radio"]:checked ~ .check:before {
+					  border-color: #c9c9c9 !important;
+					  background-color: #cf142b;
+					}
+					
+					.form--default .radio input[type="radio"]:checked:focus ~ .check:before {
+					  background-color: #333;
+					}
+					
+					.form--default .radio .check {
+					  border-radius: 100%;
+					}
+					
+					.form--default .checkbox > label {
+					  font-weight: normal;
+					}
+					
+					.form--default .checkbox input[type="checkbox"]:checked ~ .check:before {
+					  font-family: ricons !important;
+					  font-style: normal;
+					  font-variant: normal;
+					  font-weight: normal;
+					  line-height: 1;
+					  text-transform: none;
+					  speak: none;
+					  -webkit-font-smoothing: antialiased;
+					  -moz-osx-font-smoothing: grayscale;
+					  color: #cf142b;
+					  content: "n$";
+					}
+					
+					.form--default .checkbox input[type="checkbox"]:checked:focus ~ .check:before {
+					  color: #333;
+					}
+					
+					.form--default .checkbox .check {
+					  border: 1px solid #c9c9c9;
+					  border-color: #c9c9c9;
+					}
+					
+					.form--default .checkbox .check:before {
+					  top: 1px;
+					  left: 2px;
+					  width: 17px;
+					  height: 22px;
+					}
+					
+					.form--default .btn {
+					  margin: 12px 0 0;
+					}
+					
+					.form--default.sort-by, .form--default.banner-search__dropdown {
+					  margin: 0;
+					}
+					
+					.form--default.sort-by .form-group, .form--default.banner-search__dropdown .form-group {
+					  margin-right: 0;
+					  margin-bottom: 0;
+					  margin-left: 0;
+					}
+					
+					.form--default.sort-by .selectric {
+					  margin: 0;
+					  border-bottom: 1px solid #b2b2b2;
+					  background: transparent;
+					}
+					
+					.product-quote .form--default {
+					  margin: 0;
+					}
+					
+					.product-quote .form--default .form-group {
+					  margin: 0;
+					}
+					
+					.product-quote .form--default .form-control {
+					  margin: 0;
+					}
+					
+					@media screen and (min-width: 768px) {
+					  .form--default .row {
+					    margin: 0 -12px;
+					  }
+					  .form--default .halfAvailableWidth {
+					    width: calc(50% - 24px);
+					    float: left;
+					    clear: none;
+					  }
+					  .form--default .thirdAvailableWidth {
+					    width: calc(33.333% - 24px);
+					    float: left;
+					    clear: none;
+					  }
+					  .form--default .input-group {
+					    width: auto !important;
+					    min-width: calc(33.333% - 24px);
+					    margin: 0 12px;
+					    float: left;
+					  }
+					}
+					
+					.form .validation-summary-errors {
+					  display: none;
+					}
+					
+					.form .has-error .form-control {
+					  -webkit-box-shadow: none;
+					  box-shadow: none;
+					}
+					
+					.form .has-error .help-block {
+					  height: auto;
+					  opacity: 1;
+					}
+					
+					/*! btn */
+					/*! variables */
+					/*! mixins */
+					/* variable overrides */
+					/*
+					 * overrides for vendor variables
+					 *
+					 * for this to work, variables defined in vendors scss' need to have !default on the end of them
+					 * other overrides that aren't variables should go into [_overrides.scss]
+					 *
+					 */
+					.btn,
+					.btn--input,
+					.btn--default {
+					  display: block;
+					  position: relative;
+					  padding: 12px 24px;
+					  border: 1px solid transparent;
+					  border-radius: 3px;
+					  background-color: #cf142b;
+					  color: #fff;
+					  font-size: 87.5%;
+					  font-weight: bold;
+					  line-height: 1.2;
+					  text-align: center;
+					  text-decoration: none;
+					  cursor: pointer;
+					  -webkit-transition: all 0.2s ease-in-out;
+					  transition: all 0.2s ease-in-out;
+					  -webkit-user-select: none;
+					  -moz-user-select: none;
+					  -ms-user-select: none;
+					  user-select: none;
+					  -webkit-appearance: none;
+					}
+					
+					.btn:after,
+					.btn--input:after,
+					.btn--default:after {
+					  position: absolute;
+					  top: 0;
+					  left: 0;
+					  width: 100%;
+					  height: 100%;
+					  margin: 0;
+					  border-radius: 3px;
+					  background: rgba(207, 20, 43, 0.3);
+					  content: "";
+					  opacity: 0;
+					  pointer-events: none;
+					}
+					
+					a:focus .btn,
+					a:hover .btn,
+					button:focus .btn,
+					button:hover .btn, .btn:focus, .btn:hover, a:focus
+					.btn--input,
+					a:hover
+					.btn--input,
+					button:focus
+					.btn--input,
+					button:hover
+					.btn--input,
+					.btn--input:focus,
+					.btn--input:hover, a:focus
+					.btn--default,
+					a:hover
+					.btn--default,
+					button:focus
+					.btn--default,
+					button:hover
+					.btn--default,
+					.btn--default:focus,
+					.btn--default:hover {
+					  outline: none;
+					  color: #fff;
+					}
+					
+					.btn:active,
+					.btn--input:active,
+					.btn--default:active {
+					  -webkit-transform: translateY(1px);
+					  transform: translateY(1px);
+					}
+					
+					.btn .btn__input--default,
+					.btn--input .btn__input--default,
+					.btn--default .btn__input--default {
+					  position: relative;
+					  border: none;
+					  border-radius: 3px;
+					  background-color: transparent;
+					  color: #fff;
+					  font-size: 16px;
+					  font-weight: bold;
+					  line-height: 1.2;
+					  -webkit-transition: all 0.2s ease-in-out;
+					  transition: all 0.2s ease-in-out;
+					  -webkit-appearance: none;
+					}
+					
+					a:focus .btn .btn__input--default,
+					a:hover .btn .btn__input--default,
+					button:focus .btn .btn__input--default,
+					button:hover .btn .btn__input--default, .btn .btn__input--default:focus, .btn .btn__input--default:hover, a:focus
+					.btn--input .btn__input--default,
+					a:hover
+					.btn--input .btn__input--default,
+					button:focus
+					.btn--input .btn__input--default,
+					button:hover
+					.btn--input .btn__input--default,
+					.btn--input .btn__input--default:focus,
+					.btn--input .btn__input--default:hover, a:focus
+					.btn--default .btn__input--default,
+					a:hover
+					.btn--default .btn__input--default,
+					button:focus
+					.btn--default .btn__input--default,
+					button:hover
+					.btn--default .btn__input--default,
+					.btn--default .btn__input--default:focus,
+					.btn--default .btn__input--default:hover {
+					  outline: none;
+					  color: #fff;
+					}
+					
+					a:active .btn .btn__input--default,
+					button:active .btn .btn__input--default, .btn .btn__input--default:active, a:active
+					.btn--input .btn__input--default,
+					button:active
+					.btn--input .btn__input--default,
+					.btn--input .btn__input--default:active, a:active
+					.btn--default .btn__input--default,
+					button:active
+					.btn--default .btn__input--default,
+					.btn--default .btn__input--default:active {
+					  top: 1px;
+					}
+					
+					.cta + .btn, .cta +
+					.btn--input, .cta +
+					.btn--default {
+					  margin-left: 12px;
+					}
+					
+					.btn + .btn,
+					.btn-ghost + .btn, .btn +
+					.btn--input,
+					.btn-ghost +
+					.btn--input, .btn +
+					.btn--default,
+					.btn-ghost +
+					.btn--default {
+					  margin-top: 6px;
+					}
+					
+					.btn--clicked:after {
+					  -webkit-animation: fade-in-grow 0.3s forwards;
+					  animation: fade-in-grow 0.3s forwards;
+					}
+					
+					.btn--disabled {
+					  background-color: rgba(178, 178, 178, 0.5);
+					  cursor: not-allowed;
+					  pointer-events: none;
+					}
+					
+					@media screen and (min-width: 768px) {
+					  .btn {
+					    display: inline-block;
+					    width: auto;
+					  }
+					  .btn + .btn,
+					  .btn-ghost + .btn {
+					    margin-top: 0;
+					  }
+					}
+			</style>
+		  
+	</head>
+	
+	<body style="">
+		    
+		<script src="/js/forms2/js/forms2.min.js"></script>
+		
+		<form class="mktoForm mktoHasWidth mktoLayoutLeft" id="mktoForm_3802" novalidate="novalidate" style="font-family: inherit; font-size: 13px; color: rgb(51, 51, 51); width: 261px;">
+			
+			<style type="text/css"></style>
+			
+			<div class="mktoFormRow">
+				<div class="mktoFieldDescriptor mktoFormCol" style="margin-bottom: 5px;">
+					<div class="mktoOffset" style="width: 5px;"></div>
+					<div class="mktoFieldWrap">
+						<label for="FirstName" class="mktoLabel mktoHasWidth" style="width: 100px;">
+							<div class="mktoAsterix">*</div>Name
+						</label>
+						<div class="mktoGutter mktoHasWidth" style="width: 5px;"></div>
+						<input placeholder="Name" id="FirstName" name="FirstName" maxlength="255" type="text" class="mktoField mktoTextField mktoHasWidth" style="width: 150px;">
+						<div class="mktoClear"></div>
+					</div>
+					<div class="mktoClear"></div>
+				</div>
+				<div class="mktoClear"></div>
+			</div><!-- row-->
+			
+			<div class="mktoFormRow">
+				<div class="mktoFieldDescriptor mktoFormCol" style="margin-bottom: 5px;">
+					<div class="mktoOffset" style="width: 5px;"></div>
+					<div class="mktoFieldWrap">
+						<label for="LastName" class="mktoLabel mktoHasWidth" style="width: 100px;">
+							<div class="mktoAsterix">*</div>Surname
+						</label>
+						<div class="mktoGutter mktoHasWidth" style="width: 5px;"></div>
+						<input placeholder="Surname" id="LastName" name="LastName" maxlength="255" type="text" class="mktoField mktoTextField mktoHasWidth" style="width: 150px;">
+						<div class="mktoClear"></div>
+					</div>
+					<div class="mktoClear"></div>
+				</div>
+				<div class="mktoClear"></div>
+			</div><!-- row-->
+			
+			<div class="mktoFormRow">
+				<div class="mktoFieldDescriptor mktoFormCol" style="margin-bottom: 10px;">
+					<div class="mktoOffset" style="width: 10px;"></div>
+					<div class="mktoFieldWrap">
+						<label for="Sales_Group__c" class="mktoLabel mktoHasWidth" style="width: 100px;">
+							<div class="mktoAsterix">*</div>Sales company
+						</label>
+						<div class="mktoGutter mktoHasWidth" style="width: 10px;"></div>
+						<select id="Sales_Group__c" name="Sales_Group__c" class="mktoField mktoHasWidth mktoValid" style="width: 150px;">
+							<option value="">Select..</option>
+							<option value="30 - Education">30 - Education</option>
+							<option value="35 - Health">35 - Health</option>
+							<option value="40 - Other">40 - Other</option>
+							<option value="55 - GMA-FG500">55 - GMA-FG500</option>
+							<option value="60 - GMA-INTERNATIONAL ACCOUNTS">60 - GMA-INTERNATIONAL ACCOUNTS</option>
+							<option value="99 - Not Applicable">99 - Not Applicable</option>
+						</select>
+						<div class="mktoClear"></div>
+					</div>
+					<div class="mktoClear"></div>
+				</div>
+				<div class="mktoClear"></div>
+			</div><!--row-->
+			
+			<div class="mktoFormRow">
+				<div class="mktoFieldDescriptor mktoFormCol" style="margin-bottom: 5px;">
+					<div class="mktoOffset" style="width: 5px;"></div>
+					<div class="mktoFieldWrap">
+						<label for="Email" class="mktoLabel mktoHasWidth" style="width: 100px;">
+							<div class="mktoAsterix">*</div>Email Address
+						</label>
+						<div class="mktoGutter mktoHasWidth" style="width: 5px;"></div>
+						<input placeholder="Email Address" id="Email" name="Email" maxlength="255" type="email" class="mktoField mktoEmailField mktoHasWidth" style="width: 150px;">
+						<div class="mktoClear"></div>
+					</div>
+					<div class="mktoClear"></div>
+				</div>
+				<div class="mktoClear"></div>
+			</div><!--row-->
+			
+			<div class="mktoFormRow">
+				<div class="mktoFieldDescriptor mktoFormCol" style="margin-bottom: 5px;">
+					<div class="mktoOffset" style="width: 5px;"></div>
+					<div class="mktoFieldWrap">
+						<label for="Email" class="mktoLabel mktoHasWidth" style="width: 100px;">
+							<div class="mktoAsterix">*</div>Phone Number
+						</label>
+						<div class="mktoGutter mktoHasWidth" style="width: 5px;"></div>
+						<input placeholder="Phone Number" id="Email" name="Email" maxlength="255" type="email" class="mktoField mktoEmailField mktoHasWidth" style="width: 150px;">
+						<div class="mktoClear"></div>
+					</div>
+					<div class="mktoClear"></div>
+				</div>
+				<div class="mktoClear"></div>
+			</div><!--row-->
+	
+			
+			<div class="mktoButtonRow">
+				<span class="mktoButtonWrap mktoNative" style="margin-left: 110px;">
+					<button type="submit" class="mktoButton">Save details</button>
+				</span>
+			</div>
+			
+			<input type="hidden" name="formid" class="mktoField mktoFieldDescriptor" value="3802">
+			<input type="hidden" name="lpId" class="mktoField mktoFieldDescriptor" value="">
+			<input type="hidden" name="subId" class="mktoField mktoFieldDescriptor" value="">
+			<input type="hidden" name="munchkinId" class="mktoField mktoFieldDescriptor" value="">
+			<input type="hidden" name="lpurl" class="mktoField mktoFieldDescriptor" value="">
+			<input type="hidden" name="cr" class="mktoField mktoFieldDescriptor" value="">
+			<input type="hidden" name="kw" class="mktoField mktoFieldDescriptor" value="">
+			<input type="hidden" name="q" class="mktoField mktoFieldDescriptor" value="">
+		
+		</form>
+	
+		<script>
+		  (function (){
+		    var formDescriptor = {"Id":3802,"Vid":3802,"Status":"approved","Name":"Enchilada Test","Description":"test","Layout":"left","GutterWidth":5,"OffsetWidth":5,"HasTwoButtons":true,"SubmitLabel":"Submit","ResetLabel":"Clear","ButtonLocation":"110","LabelWidth":100,"FieldWidth":150,"ToolTipType":"none","FontFamily":"inherit","FontSize":"13px","FontColor":"#333","FontUrl":null,"LineMargin":5,"ProcessorVersion":2,"CreatedByUserid":5770,"ProcessOptions":{"language":"English","locale":"en_AU","profiling":{"isEnabled":false,"numberOfProfilingFields":3,"alwaysShowFields":[]},"socialSignOn":{"isEnabled":false,"enabledNetworks":[],"cfId":null,"codeSnippet":null},"knownLead":{"type":"form","template":""}},"EnableDeferredMode":0,"ButtonType":null,"ButtonImageUrl":null,"ButtonText":null,"ButtonSubmissionText":"Please Wait","ButtonStyle":{"id":14,"className":"mktoNative","css":"","buttonColor":null},"ThemeStyle":{"id":3,"displayOrder":7,"name":"Plain","backgroundColor":"#FFF","layout":"left","fontFamily":"inherit","fontSize":"13px","fontColor":"#333","offsetWidth":5,"gutterWidth":5,"labelWidth":100,"fieldWidth":150,"lineMargin":5,"useBackgroundColorOnPreview":false,"css":".mktoForm fieldset.mkt3-formEditorFieldContainer{border: solid 1px gray;}.mktoForm fieldset.mkt3-formEditorFieldContainer legend{padding:0 1em;}","href":"css\/forms2-theme-plain.css","buttonStyleId":14},"ThemeStyleOverride":"\/* Add your custom CSS below *\/\n@charset \"UTF-8\";\n\/*! reset - based off YUI with some customisation *\/\nhtml {\n  background-color: #fff;\n  color: #000;\n  -webkit-text-size-adjust: 100%;\n  -ms-text-size-adjust: 100%;\n}\n\nbody,\ndiv,\ndl,\ndt,\ndd,\nul,\nol,\nli,\nh1,\nh2,\nh3,\nh4,\nh5,\nh6,\npre,\ncode,\nform,\nfieldset,\nlegend,\ninput,\ntextarea,\np,\nblockquote,\nth,\ntd {\n  margin: 0;\n  padding: 0;\n}\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0;\n}\n\nfieldset,\nimg {\n  border: 0;\n}\n\naddress,\ncaption,\ncite,\ncode,\ndfn,\nvar {\n  font-style: normal;\n  font-weight: normal;\n}\n\nol,\nul {\n  list-style: none;\n}\n\ncaption,\nth {\n  text-align: left;\n}\n\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n  font-size: 100%;\n  font-weight: normal;\n}\n\nq:before,\nq:after {\n  content: \"\";\n}\n\nabbr,\nacronym {\n  border: 0;\n  font-variant: normal;\n}\n\nbutton,\ninput,\ntextarea,\nselect {\n  font-family: inherit;\n  font-size: inherit;\n  font-weight: inherit;\n}\n\nlegend {\n  color: #000;\n}\n\n\/*! custom switch resets *\/\nhtml {\n  -webkit-box-sizing: border-box;\n  box-sizing: border-box;\n  height: 100%;\n  overflow-y: scroll;\n  -ms-overflow-style: scrollbar;\n}\n\n*,\n*:before,\n*:after {\n  -webkit-box-sizing: inherit;\n  box-sizing: inherit;\n}\n\ninput[type=\"number\"] {\n  -moz-appearance: textfield;\n}\n\ninput[type=\"number\"]::-webkit-inner-spin-button {\n  -webkit-appearance: none;\n}\n\ninput[type=\"search\"]::-webkit-search-decoration, input[type=\"search\"]::-webkit-search-cancel-button, input[type=\"search\"]::-webkit-search-results-button, input[type=\"search\"]::-webkit-search-results-decoration {\n  -webkit-appearance: none;\n}\n\ninput[type=\"text\"]::-ms-reveal, input[type=\"text\"]::-ms-clear {\n  display: none;\n  width: 0;\n  height: 0;\n}\n\nbutton::-moz-focus-inner,\n[type=\"button\"]::-moz-focus-inner,\n[type=\"reset\"]::-moz-focus-inner,\n[type=\"submit\"]::-moz-focus-inner {\n  border-style: none;\n}\n\niframe {\n  width: 100%;\n  border: 0;\n}\n\nvideo {\n  width: 100%;\n}\n\n\/*! variables *\/\n\/*! mixins *\/\n\/*! animations *\/\n@-webkit-keyframes fade-in {\n  0% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 1;\n  }\n}\n@keyframes fade-in {\n  0% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 1;\n  }\n}\n\n@-webkit-keyframes fade-in-grow {\n  0% {\n    -webkit-transform: scale3d(0.618, 0.618, 1);\n    transform: scale3d(0.618, 0.618, 1);\n  }\n  25%,\n  50% {\n    opacity: 1;\n  }\n  100% {\n    -webkit-transform: scale3d(1.15, 1.4, 1);\n    transform: scale3d(1.15, 1.4, 1);\n    opacity: 0;\n  }\n}\n\n@keyframes fade-in-grow {\n  0% {\n    -webkit-transform: scale3d(0.618, 0.618, 1);\n    transform: scale3d(0.618, 0.618, 1);\n  }\n  25%,\n  50% {\n    opacity: 1;\n  }\n  100% {\n    -webkit-transform: scale3d(1.15, 1.4, 1);\n    transform: scale3d(1.15, 1.4, 1);\n    opacity: 0;\n  }\n}\n\n\/*! typography *\/\nbody {\n  color: #717171;\n  font-family: frutiger, \"frutiger linotype\", univers, calibri, \"gill sans\", \"gill sans mt\", \"myriad pro\", myriad, \"dejavu sans condensed\", \"liberation sans\", \"nimbus sans l\", tahoma, geneva, \"helvetica neue\", helvetica, arial, sans-serif;\n}\n\n::-moz-selection {\n  background: #cf142b;\n  color: #fff;\n}\n\n::selection {\n  background: #cf142b;\n  color: #fff;\n}\n\nstrong {\n  font-weight: bold;\n}\n\nhtml {\n  font-size: 100%;\n  line-height: 1.5;\n}\n\na {\n  color: #cf142b;\n}\n\na:focus, a:hover, a:active {\n  color: #333;\n}\n\nh6,\nh5,\nh4,\nh3,\nh2,\nh1 {\n  margin: 0 0 1.5rem;\n  color: #333;\n  font-weight: bold;\n  -webkit-transition: font-size 0.2s ease-in-out;\n  transition: font-size 0.2s ease-in-out;\n}\n\nh6,\n.h6 {\n  font-size: 1rem;\n  line-height: 1.2;\n}\n\nh5,\n.h5 {\n  font-size: 1.125rem;\n  line-height: 1.2;\n}\n\nh4,\n.h4 {\n  font-size: 1.25rem;\n  line-height: 1.2;\n}\n\nh3,\n.h3 {\n  font-size: 1.5rem;\n  line-height: 1.2;\n}\n\nh2,\n.h2 {\n  font-size: 2rem;\n  line-height: 1.2;\n}\n\nh1,\n.h1 {\n  font-size: 2.5rem;\n  line-height: 1.2;\n}\n\np {\n  margin-bottom: 0.75rem;\n}\n\nol,\nul,\ndl {\n  margin-bottom: 0.75rem;\n}\n\n\/*! utility classes *\/\n.block {\n  display: block !important;\n}\n\n.inline {\n  display: inline !important;\n}\n\n.inline-block {\n  display: inline-block !important;\n}\n\n.hidden {\n  display: none !important;\n}\n\n@media (max-width: 320px) {\n  .hidden-mobile {\n    display: none !important;\n  }\n}\n\n@media (min-width: 321px) and (max-width: 767px) {\n  .hidden-tablet {\n    display: none !important;\n  }\n}\n\n@media (min-width: 768px) {\n  .hidden-desktop {\n    display: none !important;\n  }\n}\n\n.sr-only {\n  position: absolute !important;\n  width: 1px;\n  height: 1px;\n  overflow: hidden;\n  clip: rect(0, 0, 0, 0);\n}\n\n@media (max-width: 767px) {\n  .sr-only--mobile {\n    position: absolute !important;\n    width: 1px;\n    height: 1px;\n    overflow: hidden;\n    clip: rect(0, 0, 0, 0);\n  }\n}\n\n@media (max-width: 959px) {\n  .sr-only--tablet {\n    position: absolute !important;\n    width: 1px;\n    height: 1px;\n    overflow: hidden;\n    clip: rect(0, 0, 0, 0);\n  }\n}\n\n.is-dragging {\n  pointer-events: none;\n}\n\n.float-left {\n  float: left !important;\n}\n\n.float-right {\n  float: right !important;\n}\n\n.clear {\n  clear: both !important;\n}\n\n.clear-left {\n  clear: left !important;\n}\n\n.clear-right {\n  clear: right !important;\n}\n\n.border {\n  border: 1px solid #e8e8e8 !important;\n}\n\n.border-none {\n  border: 0 !important;\n}\n\n.border-top {\n  border-top: 1px solid #e8e8e8 !important;\n}\n\n.border-bottom {\n  border-bottom: 1px solid #e8e8e8 !important;\n}\n\n.border-top-none {\n  border-top: none !important;\n}\n\n.border-bottom-none {\n  border-bottom: none !important;\n}\n\n.colour--white {\n  color: #fff !important;\n}\n\n.colour--white-light {\n  color: #fcfcfc !important;\n}\n\n.colour--white-dark {\n  color: #f3f3f3 !important;\n}\n\n.colour--grey-darker {\n  color: #333 !important;\n}\n\n.colour--black {\n  color: #000 !important;\n}\n\n.bg--white {\n  background-color: #fff !important;\n}\n\n.bg--white-light {\n  background-color: #fcfcfc !important;\n}\n\n.bg--white-dark {\n  background-color: #f3f3f3 !important;\n}\n\n.bg--grey-darker {\n  background-color: #333 !important;\n}\n\n.bg--grey-lightest {\n  background-color: #e8e8e8 !important;\n}\n\n.bg--black {\n  background-color: #000 !important;\n}\n\n.text-left {\n  text-align: left !important;\n}\n\n.text-center {\n  text-align: center !important;\n}\n\n.text-right {\n  text-align: right !important;\n}\n\n.font-weight-thin {\n  font-weight: 100 !important;\n}\n\n.font-weight-light {\n  font-weight: 300 !important;\n}\n\n.font-weight-normal {\n  font-weight: normal !important;\n}\n\n.font-weight-bold {\n  font-weight: bold !important;\n}\n\n.font-weight-black {\n  font-weight: 900 !important;\n}\n\n.text-xsmall {\n  font-size: 75%;\n}\n\nsmall,\n.text-small {\n  font-size: 87.5%;\n}\n\n.text-large {\n  font-size: 112.5%;\n}\n\n.text-xlarge {\n  font-size: 125%;\n}\n\n.word-wrap {\n  -webkit-hyphens: auto;\n  -ms-hyphens: auto;\n  hyphens: auto;\n  word-break: break-word;\n  overflow-wrap: break-word;\n  word-wrap: break-word;\n}\n\n.ellipsis {\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap;\n}\n\n.disclaimer {\n  color: #b1b1b1;\n}\n\n.colour--red {\n  color: #cf142b !important;\n}\n\n.colour--clear-pink {\n  color: #ee9193 !important;\n}\n\n.colour--clear-mango {\n  color: #f8bf56 !important;\n}\n\n.colour--clear-green {\n  color: #b7d24e !important;\n}\n\n.colour--clear-turquoise {\n  color: #4bbdcd !important;\n}\n\n.colour--clear-blue {\n  color: #74bde7 !important;\n}\n\n.colour--dull-pink {\n  color: #e36d76 !important;\n}\n\n.colour--dull-mango {\n  color: #c5a983 !important;\n}\n\n.colour--dull-green {\n  color: #759b6b !important;\n}\n\n.colour--dull-turquoise {\n  color: #38958e !important;\n}\n\n.colour--dull-blue {\n  color: #4e92ab !important;\n}\n\n.colour--pastel-pink {\n  color: #f8ccc9 !important;\n}\n\n.colour--pastel-mango {\n  color: #fde0aa !important;\n}\n\n.colour--pastel-green {\n  color: #d7ddb1 !important;\n}\n\n.colour--pastel-turquoise {\n  color: #b5dfe8 !important;\n}\n\n.colour--pastel-blue {\n  color: #c1def5 !important;\n}\n\n.bg--red {\n  background-color: #cf142b !important;\n}\n\n.bg--clear-pink {\n  background-color: #ee9193 !important;\n}\n\n.bg--clear-mango {\n  background-color: #f8bf56 !important;\n}\n\n.bg--clear-green {\n  background-color: #b7d24e !important;\n}\n\n.bg--clear-turquoise {\n  background-color: #4bbdcd !important;\n}\n\n.bg--clear-blue {\n  background-color: #74bde7 !important;\n}\n\n.bg--dull-pink {\n  background-color: #e36d76 !important;\n}\n\n.bg--dull-mango {\n  background-color: #c5a983 !important;\n}\n\n.bg--dull-green {\n  background-color: #759b6b !important;\n}\n\n.bg--dull-turquoise {\n  background-color: #38958e !important;\n}\n\n.bg--dull-blue {\n  background-color: #4e92ab !important;\n}\n\n.bg--pastel-pink {\n  background-color: #f8ccc9 !important;\n}\n\n.bg--pastel-mango {\n  background-color: #fde0aa !important;\n}\n\n.bg--pastel-green {\n  background-color: #d7ddb1 !important;\n}\n\n.bg--pastel-turquoise {\n  background-color: #b5dfe8 !important;\n}\n\n.bg--pastel-blue {\n  background-color: #c1def5 !important;\n}\n\n.action--black.btn {\n  background-color: #333;\n}\n\n.action--black.btn:after {\n  background-color: rgba(51, 51, 51, 0.3);\n}\n\na:focus .action--black.btn,\na:hover .action--black.btn,\nbutton:focus .action--black.btn,\nbutton:hover .action--black.btn, .action--black.btn:focus, .action--black.btn:hover {\n  background-color: #1a1a1a;\n}\n\n.action--black.btn-ghost {\n  border-color: #666;\n  color: #333;\n}\n\n.action--black.btn-ghost:after {\n  border-color: rgba(102, 102, 102, 0.3);\n}\n\na:focus .action--black.btn-ghost,\na:hover .action--black.btn-ghost,\nbutton:focus .action--black.btn-ghost,\nbutton:hover .action--black.btn-ghost, .action--black.btn-ghost:focus, .action--black.btn-ghost:hover {\n  color: #333;\n}\n\n.action--black.cta {\n  color: #333;\n}\n\n.action--black.cta:focus, .action--black.cta:hover {\n  color: #1a1a1a;\n}\n\n.action--dark-grey.btn {\n  background-color: #717171;\n}\n\n.action--dark-grey.btn:after {\n  background-color: rgba(113, 113, 113, 0.3);\n}\n\na:focus .action--dark-grey.btn,\na:hover .action--dark-grey.btn,\nbutton:focus .action--dark-grey.btn,\nbutton:hover .action--dark-grey.btn, .action--dark-grey.btn:focus, .action--dark-grey.btn:hover {\n  background-color: #585858;\n}\n\n.action--dark-grey.btn-ghost {\n  border-color: #717171;\n  color: #717171;\n}\n\n.action--dark-grey.btn-ghost:after {\n  border-color: rgba(113, 113, 113, 0.3);\n}\n\na:focus .action--dark-grey.btn-ghost,\na:hover .action--dark-grey.btn-ghost,\nbutton:focus .action--dark-grey.btn-ghost,\nbutton:hover .action--dark-grey.btn-ghost, .action--dark-grey.btn-ghost:focus, .action--dark-grey.btn-ghost:hover {\n  color: #717171;\n}\n\n.action--dark-grey.cta {\n  color: #717171;\n}\n\n.action--dark-grey.cta:focus, .action--dark-grey.cta:hover {\n  color: #585858;\n}\n\n.action--white.btn {\n  background-color: #fff;\n}\n\n.action--white.btn:after {\n  background-color: rgba(255, 255, 255, 0.3);\n}\n\na:focus .action--white.btn,\na:hover .action--white.btn,\nbutton:focus .action--white.btn,\nbutton:hover .action--white.btn, .action--white.btn:focus, .action--white.btn:hover {\n  background-color: #e6e6e6;\n}\n\n.action--white.btn-ghost {\n  border-color: #fff;\n  color: #fff;\n}\n\n.action--white.btn-ghost:after {\n  border-color: rgba(102, 102, 102, 0.3);\n}\n\na:focus .action--white.btn-ghost,\na:hover .action--white.btn-ghost,\nbutton:focus .action--white.btn-ghost,\nbutton:hover .action--white.btn-ghost, .action--white.btn-ghost:focus, .action--white.btn-ghost:hover {\n  color: #fff;\n}\n\n.action--white.cta {\n  color: #fff;\n}\n\n.action--white.cta:focus, .action--white.cta:hover {\n  opacity: 0.8;\n}\n\n.action--red.btn {\n  background-color: #cf142b;\n}\n\na:focus .action--red.btn,\na:hover .action--red.btn,\nbutton:focus .action--red.btn,\nbutton:hover .action--red.btn, .action--red.btn:focus, .action--red.btn:hover {\n  background-color: #890d1d;\n}\n\n.action--red.btn-ghost {\n  border-color: #cf142b;\n  color: #cf142b;\n}\n\na:focus .action--red.btn-ghost,\na:hover .action--red.btn-ghost,\nbutton:focus .action--red.btn-ghost,\nbutton:hover .action--red.btn-ghost, .action--red.btn-ghost:focus, .action--red.btn-ghost:hover {\n  color: #cf142b;\n}\n\n.action--red.cta {\n  color: #cf142b;\n}\n\n.action--red.cta:focus, .action--red.cta:hover {\n  color: #cf142b;\n}\n\n.action--pink.btn {\n  background-color: #ee9193;\n}\n\n.action--pink.btn:after {\n  background-color: rgba(238, 145, 147, 0.3);\n}\n\na:focus .action--pink.btn,\na:hover .action--pink.btn,\nbutton:focus .action--pink.btn,\nbutton:hover .action--pink.btn, .action--pink.btn:focus, .action--pink.btn:hover {\n  background-color: #e76568;\n}\n\n.action--pink.btn-ghost {\n  border-color: #ee9193;\n  color: #ee9193;\n}\n\n.action--pink.btn-ghost:after {\n  border-color: rgba(238, 145, 147, 0.3);\n}\n\na:focus .action--pink.btn-ghost,\na:hover .action--pink.btn-ghost,\nbutton:focus .action--pink.btn-ghost,\nbutton:hover .action--pink.btn-ghost, .action--pink.btn-ghost:focus, .action--pink.btn-ghost:hover {\n  color: #ee9193;\n}\n\n.action--pink.cta {\n  color: #ee9193;\n}\n\n.action--pink.cta:focus, .action--pink.cta:hover {\n  color: #e76568;\n}\n\n.action--mango.btn {\n  background-color: #f8bf56;\n}\n\n.action--mango.btn:after {\n  background-color: rgba(248, 191, 86, 0.3);\n}\n\na:focus .action--mango.btn,\na:hover .action--mango.btn,\nbutton:focus .action--mango.btn,\nbutton:hover .action--mango.btn, .action--mango.btn:focus, .action--mango.btn:hover {\n  background-color: #f6ac25;\n}\n\n.action--mango.btn-ghost {\n  border-color: #f8bf56;\n  color: #f8bf56;\n}\n\n.action--mango.btn-ghost:after {\n  border-color: rgba(248, 191, 86, 0.3);\n}\n\na:focus .action--mango.btn-ghost,\na:hover .action--mango.btn-ghost,\nbutton:focus .action--mango.btn-ghost,\nbutton:hover .action--mango.btn-ghost, .action--mango.btn-ghost:focus, .action--mango.btn-ghost:hover {\n  color: #f8bf56;\n}\n\n.action--mango.cta {\n  color: #f8bf56;\n}\n\n.action--mango.cta:focus, .action--mango.cta:hover {\n  color: #f6ac25;\n}\n\n.action--green.btn {\n  background-color: #b7d24e;\n}\n\n.action--green.btn:after {\n  background-color: rgba(183, 210, 78, 0.3);\n}\n\na:focus .action--green.btn,\na:hover .action--green.btn,\nbutton:focus .action--green.btn,\nbutton:hover .action--green.btn, .action--green.btn:focus, .action--green.btn:hover {\n  background-color: #a0bd30;\n}\n\n.action--green.btn-ghost {\n  border-color: #b7d24e;\n  color: #b7d24e;\n}\n\n.action--green.btn-ghost:after {\n  border-color: rgba(183, 210, 78, 0.3);\n}\n\na:focus .action--green.btn-ghost,\na:hover .action--green.btn-ghost,\nbutton:focus .action--green.btn-ghost,\nbutton:hover .action--green.btn-ghost, .action--green.btn-ghost:focus, .action--green.btn-ghost:hover {\n  color: #b7d24e;\n}\n\n.action--green.cta {\n  color: #b7d24e;\n}\n\n.action--green.cta:focus, .action--green.cta:hover {\n  color: #a0bd30;\n}\n\n.action--turquoise.btn {\n  background-color: #4bbdcd;\n}\n\n.action--turquoise.btn:after {\n  background-color: rgba(75, 189, 205, 0.3);\n}\n\na:focus .action--turquoise.btn,\na:hover .action--turquoise.btn,\nbutton:focus .action--turquoise.btn,\nbutton:hover .action--turquoise.btn, .action--turquoise.btn:focus, .action--turquoise.btn:hover {\n  background-color: #32a3b3;\n}\n\n.action--turquoise.btn-ghost {\n  border-color: #4bbdcd;\n  color: #4bbdcd;\n}\n\n.action--turquoise.btn-ghost:after {\n  border-color: rgba(75, 189, 205, 0.3);\n}\n\na:focus .action--turquoise.btn-ghost,\na:hover .action--turquoise.btn-ghost,\nbutton:focus .action--turquoise.btn-ghost,\nbutton:hover .action--turquoise.btn-ghost, .action--turquoise.btn-ghost:focus, .action--turquoise.btn-ghost:hover {\n  color: #4bbdcd;\n}\n\n.action--turquoise.cta {\n  color: #4bbdcd;\n}\n\n.action--turquoise.cta:focus, .action--turquoise.cta:hover {\n  color: #32a3b3;\n}\n\n.action--blue.btn {\n  background-color: #74bde7;\n}\n\n.action--blue.btn:after {\n  background-color: rgba(116, 189, 231, 0.3);\n}\n\na:focus .action--blue.btn,\na:hover .action--blue.btn,\nbutton:focus .action--blue.btn,\nbutton:hover .action--blue.btn, .action--blue.btn:focus, .action--blue.btn:hover {\n  background-color: #49a8df;\n}\n\n.action--blue.btn-ghost {\n  border-color: #74bde7;\n  color: #74bde7;\n}\n\n.action--blue.btn-ghost:after {\n  border-color: rgba(116, 189, 231, 0.3);\n}\n\na:focus .action--blue.btn-ghost,\na:hover .action--blue.btn-ghost,\nbutton:focus .action--blue.btn-ghost,\nbutton:hover .action--blue.btn-ghost, .action--blue.btn-ghost:focus, .action--blue.btn-ghost:hover {\n  color: #74bde7;\n}\n\n.action--blue.cta {\n  color: #74bde7;\n}\n\n.action--blue.cta:focus, .action--blue.cta:hover {\n  color: #49a8df;\n}\n\n\/* variable overrides *\/\n\/*\n * overrides for vendor variables\n *\n * for this to work, variables defined in vendors scss' need to have !default on the end of them\n * other overrides that aren't variables should go into [_overrides.scss]\n *\n *\/\n\/*======================================\n  Selectric v1.13.0\n======================================*\/\n.selectric-wrapper {\n  position: relative;\n  cursor: pointer;\n}\n\n.selectric-responsive {\n  width: 100%;\n}\n\n.selectric {\n  border: 1px solid #DDD;\n  border-radius: 0px;\n  background: #F8F8F8;\n  position: relative;\n  overflow: hidden;\n}\n\n.selectric .label {\n  display: block;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  margin: 0 38px 0 10px;\n  font-size: 12px;\n  line-height: 38px;\n  color: #444;\n  height: 38px;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n}\n\n.selectric .button {\n  display: block;\n  position: absolute;\n  right: 0;\n  top: 0;\n  width: 38px;\n  height: 38px;\n  line-height: 38px;\n  background-color: #F8f8f8;\n  color: #BBB;\n  text-align: center;\n  font: 0\/0 a;\n  *font: 20px\/38px Lucida Sans Unicode, Arial Unicode MS, Arial;\n}\n\n.selectric .button:after {\n  content: \" \";\n  position: absolute;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  margin: auto;\n  width: 0;\n  height: 0;\n  border: 4px solid transparent;\n  border-top-color: #BBB;\n  border-bottom: none;\n}\n\n.selectric-focus .selectric {\n  border-color: #aaaaaa;\n}\n\n.selectric-hover .selectric {\n  border-color: #c4c4c4;\n}\n\n.selectric-hover .selectric .button {\n  color: #a2a2a2;\n}\n\n.selectric-hover .selectric .button:after {\n  border-top-color: #a2a2a2;\n}\n\n.selectric-open {\n  z-index: 9999;\n}\n\n.selectric-open .selectric {\n  border-color: #c4c4c4;\n}\n\n.selectric-open .selectric-items {\n  display: block;\n}\n\n.selectric-disabled {\n  filter: alpha(opacity=50);\n  opacity: 0.5;\n  cursor: default;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n}\n\n.selectric-hide-select {\n  position: relative;\n  overflow: hidden;\n  width: 0;\n  height: 0;\n}\n\n.selectric-hide-select select {\n  position: absolute;\n  left: -100%;\n}\n\n.selectric-hide-select.selectric-is-native {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  z-index: 10;\n}\n\n.selectric-hide-select.selectric-is-native select {\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  height: 100%;\n  width: 100%;\n  border: none;\n  z-index: 1;\n  -webkit-box-sizing: border-box;\n  box-sizing: border-box;\n  opacity: 0;\n}\n\n.selectric-input {\n  position: absolute !important;\n  top: 0 !important;\n  left: 0 !important;\n  overflow: hidden !important;\n  clip: rect(0, 0, 0, 0) !important;\n  margin: 0 !important;\n  padding: 0 !important;\n  width: 1px !important;\n  height: 1px !important;\n  outline: none !important;\n  border: none !important;\n  *font: 0\/0 a !important;\n  background: none !important;\n}\n\n.selectric-temp-show {\n  position: absolute !important;\n  visibility: hidden !important;\n  display: block !important;\n}\n\n\/* Items box *\/\n.selectric-items {\n  display: none;\n  position: absolute;\n  top: 100%;\n  left: 0;\n  background: #F8F8F8;\n  border: 1px solid #c4c4c4;\n  z-index: -1;\n  -webkit-box-shadow: 0 0 10px -6px;\n  box-shadow: 0 0 10px -6px;\n}\n\n.selectric-items .selectric-scroll {\n  height: 100%;\n  overflow: auto;\n}\n\n.selectric-above .selectric-items {\n  top: auto;\n  bottom: 100%;\n}\n\n.selectric-items ul, .selectric-items li {\n  list-style: none;\n  padding: 0;\n  margin: 0;\n  font-size: 12px;\n  line-height: 20px;\n  min-height: 20px;\n}\n\n.selectric-items li {\n  display: block;\n  padding: 10px;\n  color: #666;\n  cursor: pointer;\n}\n\n.selectric-items li.selected {\n  background: #E0E0E0;\n  color: #444;\n}\n\n.selectric-items li.highlighted {\n  background: #D0D0D0;\n  color: #444;\n}\n\n.selectric-items li:hover {\n  background: #D5D5D5;\n  color: #444;\n}\n\n.selectric-items .disabled {\n  filter: alpha(opacity=50);\n  opacity: 0.5;\n  cursor: default !important;\n  background: none !important;\n  color: #666 !important;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n}\n\n.selectric-items .selectric-group .selectric-group-label {\n  font-weight: bold;\n  padding-left: 10px;\n  cursor: default;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n  background: none;\n  color: #444;\n}\n\n.selectric-items .selectric-group.disabled li {\n  filter: alpha(opacity=100);\n  opacity: 1;\n}\n\n.selectric-items .selectric-group li {\n  padding-left: 25px;\n}\n\n\/* overrides *\/\n.ui-datepicker {\n  display: none;\n  width: 320px;\n  padding: 12px;\n  background-color: #fcfcfc;\n  -webkit-box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);\n  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);\n  border-radius: 3px;\n}\n\n.ui-datepicker .ui-datepicker-header {\n  position: relative;\n  padding: 0.2em 0;\n}\n\n.ui-datepicker .ui-datepicker-prev,\n.ui-datepicker .ui-datepicker-next {\n  position: absolute;\n  top: 2px;\n  width: 1.8em;\n  height: 1.8em;\n  cursor: pointer;\n}\n\n.ui-datepicker .ui-datepicker-prev:before,\n.ui-datepicker .ui-datepicker-next:before {\n  font-family: ricons !important;\n  font-style: normal;\n  font-variant: normal;\n  font-weight: normal;\n  line-height: 1;\n  text-transform: none;\n  speak: none;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  position: absolute;\n  top: 6px;\n}\n\n.ui-datepicker .ui-datepicker-prev span,\n.ui-datepicker .ui-datepicker-next span {\n  display: none;\n}\n\n.ui-datepicker .ui-datepicker-prev-hover,\n.ui-datepicker .ui-datepicker-next-hover {\n  top: 1px;\n}\n\n.ui-datepicker .ui-datepicker-prev {\n  left: 0;\n}\n\n.ui-datepicker .ui-datepicker-prev:before {\n  content: \"n$\u0001\";\n  left: 6px;\n}\n\n.ui-datepicker .ui-datepicker-next {\n  right: 0;\n}\n\n.ui-datepicker .ui-datepicker-next:before {\n  content: \"n$\u0002\";\n  right: 6px;\n}\n\n.ui-datepicker .ui-datepicker-title {\n  margin: 0 2.3em;\n  line-height: 1.8em;\n  text-align: center;\n  color: #333;\n  font-weight: bold;\n}\n\n.ui-datepicker .ui-datepicker-title select {\n  margin: 1px 0;\n  font-size: 1em;\n}\n\n.ui-datepicker select.ui-datepicker-month,\n.ui-datepicker select.ui-datepicker-year {\n  width: 45%;\n}\n\n.ui-datepicker table {\n  width: 100%;\n  margin: 0;\n  border-collapse: collapse;\n  font-size: 0.9em;\n}\n\n.ui-datepicker th {\n  padding: 0.7em 0.3em;\n  border: 0;\n  color: #333;\n  font-weight: normal;\n  text-align: center;\n}\n\n.ui-datepicker td {\n  padding: 1px;\n  border: 0;\n}\n\n.ui-datepicker td span,\n.ui-datepicker td a {\n  display: block;\n  padding: 0.2em;\n  text-align: center;\n  text-decoration: none;\n}\n\n.ui-datepicker .ui-datepicker-calendar .ui-state-default {\n  color: #717171;\n}\n\n.ui-datepicker .ui-datepicker-calendar .ui-state-hover {\n  background-color: #e8e8e8;\n}\n\n.ui-datepicker .ui-datepicker-calendar .ui-state-active {\n  background-color: #717171;\n  color: #fff;\n}\n\n.ui-datepicker .ui-datepicker-calendar .ui-state-highlight {\n  background-color: #e8e8e8;\n  color: #717171;\n}\n\n.ui-datepicker .ui-datepicker-buttonpane {\n  margin: 0.7em 0 0;\n  padding: 0 0.2em;\n  border-right: 0;\n  border-bottom: 0;\n  border-left: 0;\n  background-image: none;\n}\n\n.ui-datepicker .ui-datepicker-buttonpane button {\n  width: auto;\n  margin: 0.5em 0.2em 0.4em;\n  padding: 0.2em 0.6em;\n  float: right;\n  overflow: visible;\n  cursor: pointer;\n}\n\n.ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current {\n  float: left;\n}\n\n.lazyload,\n.lazyloading {\n  background: url(\"\/-\/media\/Project\/Ricoh\/Knowledge\/RicohTheme\/images\/fallbacks\/spinner.svg?v=1826\") no-repeat 50% 50% !important;\n  background-size: 25% 25% !important;\n}\n\n.lazyloaded {\n  -webkit-animation-name: fade-in;\n  animation-name: fade-in;\n  -webkit-animation-duration: 0.4s;\n  animation-duration: 0.4s;\n  -webkit-animation-fill-mode: forwards;\n  animation-fill-mode: forwards;\n  -webkit-animation-timing-function: ease-in-out;\n  animation-timing-function: ease-in-out;\n  -webkit-animation-iteration-count: 1;\n  animation-iteration-count: 1;\n  -webkit-animation-direction: normal;\n  animation-direction: normal;\n  opacity: 0;\n}\n\n.lazyloaded.lazyload--no-animation {\n  -webkit-animation: none;\n  animation: none;\n  opacity: 1;\n}\n\n.ie .lazyloaded,\n.ie-edge .lazyloaded {\n  -webkit-animation: none;\n  animation: none;\n  opacity: 1 !important;\n}\n\n.flickity-prev-next-button {\n  position: absolute;\n  top: 50%;\n  width: 42px;\n  height: 42px;\n  -webkit-transform: translateY(-50%);\n  transform: translateY(-50%);\n  border: 0;\n  border-radius: 0;\n  background: transparent;\n  opacity: 0.5;\n  -webkit-transition: opacity 0.3s ease-in-out;\n  transition: opacity 0.3s ease-in-out;\n  will-change: opacity;\n}\n\n.flickity-prev-next-button:focus {\n  -webkit-box-shadow: none;\n  box-shadow: none;\n}\n\n.flickity-prev-next-button:focus .arrow {\n  fill: #cf142b;\n}\n\n.flickity-prev-next-button:hover, .flickity-prev-next-button:active {\n  background-color: transparent;\n  opacity: 1;\n}\n\n.flickity-prev-next-button:disabled {\n  opacity: 0.1;\n}\n\n.flickity-prev-next-button.previous {\n  left: 12px;\n}\n\n.flickity-prev-next-button.next {\n  right: 12px;\n}\n\n.flickity-prev-next-button svg {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n}\n\n.flickity-prev-next-button .arrow {\n  fill: #fff;\n}\n\n.flickity-page-dots {\n  bottom: 15px;\n}\n\n.flickity-page-dots .dot {\n  margin: 0 3px;\n  border: 2px solid #fff;\n  background-color: transparent;\n  opacity: 1;\n  -webkit-transition: background-color 0.3s ease-in-out;\n  transition: background-color 0.3s ease-in-out;\n}\n\n.flickity-page-dots .dot:hover {\n  background-color: #fff;\n}\n\n.flickity-page-dots .dot.is-selected {\n  border-color: #cf142b;\n  background-color: #cf142b;\n}\n\n.selectric {\n  border: 0;\n  border-bottom: 1px solid #e8e8e8;\n  background-color: transparent;\n}\n\n.selectric-open .selectric,\n.selectric-hover .selectric {\n  border-bottom-color: #e8e8e8;\n}\n\n.selectric .label {\n  height: 36px;\n  margin-left: 0;\n  padding: 0;\n  color: #717171;\n  font-size: 1rem;\n  font-weight: normal;\n  line-height: 36px;\n}\n\n.selectric-btn {\n  position: absolute;\n  top: 50%;\n  right: 0;\n  -webkit-transform: translateY(-50%);\n  transform: translateY(-50%);\n}\n\n.selectric-btn .ricon {\n  -webkit-transition: -webkit-transform 0.2s ease-in-out;\n  transition: -webkit-transform 0.2s ease-in-out;\n  transition: transform 0.2s ease-in-out;\n  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;\n}\n\n.selectric-open .selectric-btn .ricon {\n  -webkit-transform: rotate(-180deg);\n  transform: rotate(-180deg);\n}\n\n.selectric-items {\n  top: calc(100% + 24px);\n  padding: 18px 0;\n  border: 1px solid #e8e8e8;\n  border-radius: 3px;\n  background-color: #f3f3f3;\n  -webkit-box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.05);\n  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.05);\n}\n\n.selectric-items:focus {\n  outline: 0;\n}\n\n.selectric-items:before {\n  position: absolute;\n  top: -11px;\n  left: 50%;\n  width: 20px;\n  height: 20px;\n  margin-left: -10px;\n  -webkit-transform: scaleX(1.5) rotate(45deg);\n  transform: scaleX(1.5) rotate(45deg);\n  border-top: 1px solid #e8e8e8;\n  border-left: 1px solid #e8e8e8;\n  background: #f3f3f3;\n  content: \"\";\n}\n\n.selectric-items li {\n  padding: 6px 24px;\n  color: #717171 !important;\n  font-size: 1rem;\n  -webkit-transition: all 0.2s ease-in-out;\n  transition: all 0.2s ease-in-out;\n}\n\n.selectric-items li:focus, .selectric-items li:hover, .selectric-items li.highlighted {\n  background-color: #e8e8e8;\n  color: #333 !important;\n}\n\n.selectric-items li.disabled {\n  color: #b1b1b1 !important;\n}\n\n.selectric-above .selectric-items {\n  bottom: calc(100% + 24px);\n}\n\n.selectric-above .selectric-items:before {\n  top: auto;\n  bottom: -11px;\n  border-top: 0;\n  border-right: 1px solid #e8e8e8;\n  border-bottom: 1px solid #e8e8e8;\n  border-left: 0;\n}\n\n.noUi-target {\n  border-radius: 3px;\n  border-color: #e8e8e8;\n  background: #fff;\n  -webkit-box-shadow: none;\n  box-shadow: none;\n}\n\n.noUi-target:before, .noUi-target:after {\n  position: absolute;\n  top: -1px;\n  bottom: -1px;\n  width: 36px;\n  border: 1px solid #e8e8e8;\n  background: #fff;\n  content: \"\";\n}\n\n.noUi-target:before {\n  left: -12px;\n  border-right: 0;\n  border-radius: 3px 0 0 3px;\n}\n\n.noUi-target:after {\n  right: -12px;\n  border-left: 0;\n  border-radius: 0 3px 3px 0;\n}\n\n.noUi-connect {\n  background: #e8e8e8;\n  -webkit-box-shadow: inset 0 0 1px rgba(51, 51, 51, 0.45);\n  box-shadow: inset 0 0 1px rgba(51, 51, 51, 0.45);\n}\n\n.noUi-horizontal {\n  height: 12px;\n}\n\n.noUi-horizontal .noUi-handle {\n  top: -8px;\n  left: -12px;\n  width: 24px;\n  height: 24px;\n  border-color: #e8e8e8;\n  -webkit-box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);\n  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);\n}\n\n.noUi-horizontal .noUi-handle:focus {\n  border-color: #333;\n  outline: 0;\n}\n\n.noUi-horizontal .noUi-handle:before, .noUi-horizontal .noUi-handle:after {\n  top: 8px;\n  bottom: 6px;\n  height: auto;\n  background: #e8e8e8;\n}\n\n.noUi-horizontal .noUi-handle:before {\n  right: 9px;\n  left: auto;\n}\n\n.noUi-horizontal .noUi-handle:after {\n  left: 9px;\n}\n\n@media screen and (min-width: 768px) {\n  .noUI-target {\n    background: 0;\n  }\n}\n\n\/*! site *\/\nbody {\n  background-color: #fff;\n  -webkit-transition: opacity 0.3s ease-in;\n  transition: opacity 0.3s ease-in;\n}\n\nbody.jsLoaded {\n  opacity: 1;\n}\n\n.body--nav-open {\n  height: 100vh;\n  overflow: hidden;\n}\n\n@media screen and (min-width: 960px) {\n  .body--nav-open {\n    height: auto;\n  }\n}\n\n.container-fluid {\n  width: 100%;\n  max-width: 1920px;\n  margin: 0 auto;\n  overflow: hidden;\n  background-position: 50% 50%;\n  background-repeat: no-repeat;\n  background-size: cover;\n  -webkit-transition: width 0.1s ease-out;\n  transition: width 0.1s ease-out;\n}\n\n.container-fluid--full-width {\n  max-width: none;\n}\n\n.container {\n  max-width: 1296px;\n  margin-left: auto;\n  margin-right: auto;\n  position: relative;\n  padding: 0 12px;\n  clear: both;\n  background-position: 50% 50%;\n  background-repeat: no-repeat;\n  background-size: cover;\n  -webkit-transition: width 0.1s ease-out;\n  transition: width 0.1s ease-out;\n}\n\n.container:after {\n  display: table;\n  clear: both;\n  content: \"\";\n}\n\n.container:after {\n  content: \" \";\n  display: block;\n  clear: both;\n}\n\n.container--no-padding {\n  padding: 0;\n}\n\n.container--narrow {\n  max-width: 834px;\n}\n\n.container-two-col {\n  max-width: 1296px;\n  margin-left: auto;\n  margin-right: auto;\n  position: relative;\n  padding: 0 12px;\n  clear: both;\n  background-position: 50% 50%;\n  background-repeat: no-repeat;\n  background-size: cover;\n  -webkit-transition: width 0.1s ease-out;\n  transition: width 0.1s ease-out;\n}\n\n.container-two-col:after {\n  display: table;\n  clear: both;\n  content: \"\";\n}\n\n.container-two-col:after {\n  content: \" \";\n  display: block;\n  clear: both;\n}\n\n.container-two-col \u003E .component-content:after {\n  display: table;\n  clear: both;\n  content: \"\";\n}\n\n.container-two-col--fluid {\n  max-width: 1920px;\n  padding-right: 0;\n  padding-left: 0;\n}\n\n.component--margin-small {\n  margin-top: 24px;\n  margin-bottom: 24px;\n}\n\n.component--margin-none {\n  margin-top: 0;\n  margin-bottom: 0;\n}\n\n.component__title {\n  font-size: 2.5rem;\n  line-height: 1.2;\n  margin-bottom: 24px;\n}\n\n.component__subtitle {\n  margin-top: 24px;\n  margin-bottom: 24px;\n  font-size: 16px;\n}\n\n@media screen and (min-width: 768px) {\n  .container-two-col .col-1 {\n    width: 49.07339%;\n    float: left;\n    margin-right: 1.85322%;\n  }\n  .container-two-col .col-2 {\n    width: 49.07339%;\n    float: right;\n    margin-right: 0;\n  }\n  .container-two-col--form .col-1 {\n    width: 32.09785%;\n    float: left;\n    margin-right: 1.85322%;\n    margin: 0 0 36px;\n  }\n  .container-two-col--form .col-2 {\n    width: 66.04893%;\n    float: right;\n    margin-right: 0;\n  }\n  .component--margin-small {\n    margin-top: 36px;\n    margin-bottom: 36px;\n  }\n  .component--margin-none {\n    margin-top: 0;\n    margin-bottom: 0;\n  }\n}\n\n.browser-upgrade,\n.noscript-container {\n  position: relative;\n  margin: 0;\n  padding: 24px 18px;\n  background: #a01021;\n  color: #fff;\n}\n\n.browser-upgrade p,\n.noscript-container p {\n  margin: 0 0 6px;\n}\n\n.browser-upgrade p a,\n.noscript-container p a {\n  color: #fff;\n  text-decoration: underline;\n}\n\n.browser-upgrade p a:hover,\n.noscript-container p a:hover {\n  text-decoration: none;\n  opacity: 0.7;\n}\n\n@media screen and (min-width: 321px) {\n  .browser-upgrade,\n  .noscript-container {\n    top: 0;\n    right: 0;\n    left: 0;\n    margin: 0;\n    text-align: center;\n  }\n}\n\n@media screen and (min-width: 321px) {\n  .noscript-container {\n    position: fixed;\n    top: auto;\n    bottom: 0;\n  }\n}\n\n\/*! forms *\/\n\/*! variables *\/\n\/*! mixins *\/\n\/* variable overrides *\/\n\/*\n * overrides for vendor variables\n *\n * for this to work, variables defined in vendors scss' need to have !default on the end of them\n * other overrides that aren't variables should go into [_overrides.scss]\n *\n *\/\n.form .row:after {\n  display: table;\n  clear: both;\n  content: \"\";\n}\n\n.form label {\n  display: block;\n}\n\n.form label:hover {\n  cursor: pointer;\n}\n\n.form label:focus {\n  outline: 0;\n}\n\n.form .form-control {\n  width: 100%;\n}\n\n.form .form-control:focus, .form .form-control:invalid {\n  outline: 0;\n  -webkit-box-shadow: none;\n  box-shadow: none;\n}\n\n.form select {\n  -webkit-appearance: none;\n  -moz-appearance: none;\n  appearance: none;\n}\n\n.form select::-ms-expand {\n  display: none;\n}\n\n.form select option {\n  -webkit-appearance: none;\n  -moz-appearance: none;\n  appearance: none;\n}\n\n.form textarea {\n  font-family: frutiger, \"frutiger linotype\", univers, calibri, \"gill sans\", \"gill sans mt\", \"myriad pro\", myriad, \"dejavu sans condensed\", \"liberation sans\", \"nimbus sans l\", tahoma, geneva, \"helvetica neue\", helvetica, arial, sans-serif;\n  resize: vertical;\n}\n\n.form .required-field .control-label:after {\n  color: #c9c9c9;\n  font-weight: normal;\n  content: \"*\";\n  opacity: 0.85;\n}\n\n.form .required-field .form-control:-moz-ui-invalid:not(output) {\n  box-shadow: none;\n}\n\n.form .required-field .form-control.validate:invalid:not(:focus) {\n  border-bottom: 1px solid #cf142b;\n}\n\n.form .required-field .form-control.validate:valid {\n  border-bottom: 1px solid #529e00;\n}\n\n.form--default {\n  margin-right: -12px;\n  margin-bottom: 24px;\n  margin-left: -12px;\n}\n\n.form--default .form-group,\n.form--default .form-submit-border {\n  position: relative;\n  margin: 0 12px 24px;\n  clear: both;\n}\n\n.form--default .help-block {\n  position: absolute;\n  top: 100%;\n  right: 0;\n  left: 0;\n  height: 0;\n  color: #cf142b;\n  font-size: 12px;\n  line-height: 12px;\n  opacity: 0;\n  -webkit-transition: opacity 0.2s ease-in-out;\n  transition: opacity 0.2s ease-in-out;\n}\n\n.form--default label {\n  margin-bottom: 6px;\n  color: #333;\n  font-size: 16px;\n  font-weight: bold;\n  line-height: 1.2;\n}\n\n.form--default .form-control,\n.form--default .selectric {\n  height: 36px;\n  margin-bottom: 6px;\n  border-top: none;\n  border-right: none;\n  border-bottom: 1px solid #e8e8e8;\n  border-left: none;\n  background-color: #fff;\n  color: #717171;\n  font-size: 16px;\n  line-height: 36px;\n  -webkit-transition: border-color 0.2s ease-in-out;\n  transition: border-color 0.2s ease-in-out;\n}\n\n.form--default .form-control::-webkit-input-placeholder,\n.form--default .selectric::-webkit-input-placeholder {\n  color: #c9c9c9;\n  font-weight: normal;\n  opacity: 0.85;\n}\n\n.form--default .form-control::-moz-placeholder,\n.form--default .selectric::-moz-placeholder {\n  color: #c9c9c9;\n  font-weight: normal;\n  opacity: 0.85;\n}\n\n.form--default .form-control:-ms-input-placeholder,\n.form--default .selectric:-ms-input-placeholder {\n  color: #c9c9c9;\n  font-weight: normal;\n  opacity: 0.85;\n}\n\n.form--default .form-control:focus, .form--default .form-control:active,\n.form--default .selectric:focus,\n.form--default .selectric:active {\n  border-color: #b2b2b2;\n}\n\n.form--default .form-control:focus:valid, .form--default .form-control:active:valid,\n.form--default .selectric:focus:valid,\n.form--default .selectric:active:valid {\n  border-color: #529e00;\n}\n\n.form--default .form-control[disabled],\n.form--default .selectric[disabled] {\n  padding-left: 12px;\n  border: 1px solid #f3f3f3;\n  background-color: #f3f3f3;\n}\n\n.form--default .form-control[disabled]:hover,\n.form--default .selectric[disabled]:hover {\n  cursor: not-allowed;\n}\n\n.form--default .form-select {\n  background: url(\"\/-\/media\/Project\/Ricoh\/Knowledge\/RicohTheme\/images\/form\/arrow-down.svg\");\n  background-position: 100% 50%;\n  background-repeat: no-repeat;\n  background-size: 18px auto;\n}\n\n.form--default .form-select:focus, .form--default .form-select:active {\n  background-image: url(\"\/-\/media\/Project\/Ricoh\/Knowledge\/RicohTheme\/images\/form\/arrow-up.svg\");\n}\n\n.form--default .form-select:invalid {\n  color: #717171;\n}\n\n.form--default .form-textarea {\n  height: 108px;\n  line-height: 1.3;\n}\n\n.form--default .form-group-check label,\n.form--default .radio label,\n.form--default .checkbox label {\n  display: inline-block;\n  position: relative;\n  margin: 0;\n  padding-top: 6px;\n  color: #666;\n  cursor: pointer;\n  -webkit-transition: color 0.2s ease-in-out;\n  transition: color 0.2s ease-in-out;\n}\n\n.form--default .form-group-check label:focus,\n.form--default .radio label:focus,\n.form--default .checkbox label:focus {\n  color: #000;\n}\n\n.form--default .form-group-check.form-group \u003E label,\n.form--default .radio.form-group \u003E label,\n.form--default .checkbox.form-group \u003E label {\n  font-weight: bold;\n}\n\n.form--default .form-group-check table,\n.form--default .form-group-check tr,\n.form--default .form-group-check td,\n.form--default .radio table,\n.form--default .radio tr,\n.form--default .radio td,\n.form--default .checkbox table,\n.form--default .checkbox tr,\n.form--default .checkbox td {\n  display: block;\n}\n\n.form--default .form-group-check td,\n.form--default .radio td,\n.form--default .checkbox td {\n  padding: 0 0 6px;\n}\n\n.form--default .form-group-check td:hover label,\n.form--default .radio td:hover label,\n.form--default .checkbox td:hover label {\n  color: #333;\n}\n\n.form--default .form-group-check td input[type=\"radio\"],\n.form--default .form-group-check td input[type=\"checkbox\"],\n.form--default .radio td input[type=\"radio\"],\n.form--default .radio td input[type=\"checkbox\"],\n.form--default .checkbox td input[type=\"radio\"],\n.form--default .checkbox td input[type=\"checkbox\"] {\n  display: inline-block;\n  margin: 0 3px 0 0;\n}\n\n.form--default .form-group-check td label,\n.form--default .radio td label,\n.form--default .checkbox td label {\n  font-weight: normal;\n}\n\n.form--default .form-group-check ul,\n.form--default .radio ul,\n.form--default .checkbox ul {\n  margin: 0;\n  list-style: none;\n}\n\n.form--default .form-group-check ul input,\n.form--default .radio ul input,\n.form--default .checkbox ul input {\n  position: absolute;\n  top: 6px;\n  left: 2px;\n  clip: rect(0 0 0 0);\n}\n\n.form--default .form-group-check ul input:focus ~ .check,\n.form--default .radio ul input:focus ~ .check,\n.form--default .checkbox ul input:focus ~ .check {\n  border-color: #333;\n}\n\n.form--default .form-group-check ul input:checked ~ .check,\n.form--default .radio ul input:checked ~ .check,\n.form--default .checkbox ul input:checked ~ .check {\n  border-color: #cf142b;\n}\n\n.form--default .form-group-check ul input:checked:focus ~ .check,\n.form--default .radio ul input:checked:focus ~ .check,\n.form--default .checkbox ul input:checked:focus ~ .check {\n  border-color: #333;\n}\n\n.form--default .form-group-check ul label,\n.form--default .radio ul label,\n.form--default .checkbox ul label {\n  padding-left: 36px;\n  font-weight: normal;\n}\n\n.form--default .form-group-check li,\n.form--default .radio li,\n.form--default .checkbox li {\n  position: relative;\n  margin: 0;\n  padding: 0 0 6px;\n}\n\n.form--default .form-group-check li:hover label,\n.form--default .radio li:hover label,\n.form--default .checkbox li:hover label {\n  color: #333;\n}\n\n.form--default .form-group-check li:last-of-type,\n.form--default .radio li:last-of-type,\n.form--default .checkbox li:last-of-type {\n  padding-bottom: 0;\n}\n\n.form--default .form-group-check .check,\n.form--default .radio .check,\n.form--default .checkbox .check {\n  display: block;\n  position: absolute;\n  top: 3px;\n  left: 0;\n  width: 24px;\n  height: 24px;\n  border: 1px solid #e8e8e8;\n  background-color: #fff;\n  font-size: 1.25rem;\n  -webkit-transition: border 0.2s ease-in-out;\n  transition: border 0.2s ease-in-out;\n}\n\n.form--default .form-group-check .check:before,\n.form--default .radio .check:before,\n.form--default .checkbox .check:before {\n  display: block;\n  position: absolute;\n  top: 5px;\n  left: 5px;\n  width: 12px;\n  height: 12px;\n  border-radius: 100%;\n  content: \"\";\n  -webkit-transition: background-color 0.2s ease-in-out;\n  transition: background-color 0.2s ease-in-out;\n}\n\n.form--default .radio \u003E label {\n  font-weight: normal;\n}\n\n.form--default .radio input[type=\"radio\"]:checked ~ .check:before {\n  border-color: #c9c9c9 !important;\n  background-color: #cf142b;\n}\n\n.form--default .radio input[type=\"radio\"]:checked:focus ~ .check:before {\n  background-color: #333;\n}\n\n.form--default .radio .check {\n  border-radius: 100%;\n}\n\n.form--default .checkbox \u003E label {\n  font-weight: normal;\n}\n\n.form--default .checkbox input[type=\"checkbox\"]:checked ~ .check:before {\n  font-family: ricons !important;\n  font-style: normal;\n  font-variant: normal;\n  font-weight: normal;\n  line-height: 1;\n  text-transform: none;\n  speak: none;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  color: #cf142b;\n  content: \"n$\u001f\";\n}\n\n.form--default .checkbox input[type=\"checkbox\"]:checked:focus ~ .check:before {\n  color: #333;\n}\n\n.form--default .checkbox .check {\n  border: 1px solid #c9c9c9;\n  border-color: #c9c9c9;\n}\n\n.form--default .checkbox .check:before {\n  top: 1px;\n  left: 2px;\n  width: 17px;\n  height: 22px;\n}\n\n.form--default .btn {\n  margin: 12px 0 0;\n}\n\n.form--default.sort-by, .form--default.banner-search__dropdown {\n  margin: 0;\n}\n\n.form--default.sort-by .form-group, .form--default.banner-search__dropdown .form-group {\n  margin-right: 0;\n  margin-bottom: 0;\n  margin-left: 0;\n}\n\n.form--default.sort-by .selectric {\n  margin: 0;\n  border-bottom: 1px solid #b2b2b2;\n  background: transparent;\n}\n\n.product-quote .form--default {\n  margin: 0;\n}\n\n.product-quote .form--default .form-group {\n  margin: 0;\n}\n\n.product-quote .form--default .form-control {\n  margin: 0;\n}\n\n@media screen and (min-width: 768px) {\n  .form--default .row {\n    margin: 0 -12px;\n  }\n  .form--default .halfAvailableWidth {\n    width: calc(50% - 24px);\n    float: left;\n    clear: none;\n  }\n  .form--default .thirdAvailableWidth {\n    width: calc(33.333% - 24px);\n    float: left;\n    clear: none;\n  }\n  .form--default .input-group {\n    width: auto !important;\n    min-width: calc(33.333% - 24px);\n    margin: 0 12px;\n    float: left;\n  }\n}\n\n.form .validation-summary-errors {\n  display: none;\n}\n\n.form .has-error .form-control {\n  -webkit-box-shadow: none;\n  box-shadow: none;\n}\n\n.form .has-error .help-block {\n  height: auto;\n  opacity: 1;\n}\n\n\/*! btn *\/\n\/*! variables *\/\n\/*! mixins *\/\n\/* variable overrides *\/\n\/*\n * overrides for vendor variables\n *\n * for this to work, variables defined in vendors scss' need to have !default on the end of them\n * other overrides that aren't variables should go into [_overrides.scss]\n *\n *\/\n.btn,\n.btn--input,\n.btn--default {\n  display: block;\n  position: relative;\n  padding: 12px 24px;\n  border: 1px solid transparent;\n  border-radius: 3px;\n  background-color: #cf142b;\n  color: #fff;\n  font-size: 87.5%;\n  font-weight: bold;\n  line-height: 1.2;\n  text-align: center;\n  text-decoration: none;\n  cursor: pointer;\n  -webkit-transition: all 0.2s ease-in-out;\n  transition: all 0.2s ease-in-out;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n  -webkit-appearance: none;\n}\n\n.btn:after,\n.btn--input:after,\n.btn--default:after {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  margin: 0;\n  border-radius: 3px;\n  background: rgba(207, 20, 43, 0.3);\n  content: \"\";\n  opacity: 0;\n  pointer-events: none;\n}\n\na:focus .btn,\na:hover .btn,\nbutton:focus .btn,\nbutton:hover .btn, .btn:focus, .btn:hover, a:focus\n.btn--input,\na:hover\n.btn--input,\nbutton:focus\n.btn--input,\nbutton:hover\n.btn--input,\n.btn--input:focus,\n.btn--input:hover, a:focus\n.btn--default,\na:hover\n.btn--default,\nbutton:focus\n.btn--default,\nbutton:hover\n.btn--default,\n.btn--default:focus,\n.btn--default:hover {\n  outline: none;\n  color: #fff;\n}\n\n.btn:active,\n.btn--input:active,\n.btn--default:active {\n  -webkit-transform: translateY(1px);\n  transform: translateY(1px);\n}\n\n.btn .btn__input--default,\n.btn--input .btn__input--default,\n.btn--default .btn__input--default {\n  position: relative;\n  border: none;\n  border-radius: 3px;\n  background-color: transparent;\n  color: #fff;\n  font-size: 16px;\n  font-weight: bold;\n  line-height: 1.2;\n  -webkit-transition: all 0.2s ease-in-out;\n  transition: all 0.2s ease-in-out;\n  -webkit-appearance: none;\n}\n\na:focus .btn .btn__input--default,\na:hover .btn .btn__input--default,\nbutton:focus .btn .btn__input--default,\nbutton:hover .btn .btn__input--default, .btn .btn__input--default:focus, .btn .btn__input--default:hover, a:focus\n.btn--input .btn__input--default,\na:hover\n.btn--input .btn__input--default,\nbutton:focus\n.btn--input .btn__input--default,\nbutton:hover\n.btn--input .btn__input--default,\n.btn--input .btn__input--default:focus,\n.btn--input .btn__input--default:hover, a:focus\n.btn--default .btn__input--default,\na:hover\n.btn--default .btn__input--default,\nbutton:focus\n.btn--default .btn__input--default,\nbutton:hover\n.btn--default .btn__input--default,\n.btn--default .btn__input--default:focus,\n.btn--default .btn__input--default:hover {\n  outline: none;\n  color: #fff;\n}\n\na:active .btn .btn__input--default,\nbutton:active .btn .btn__input--default, .btn .btn__input--default:active, a:active\n.btn--input .btn__input--default,\nbutton:active\n.btn--input .btn__input--default,\n.btn--input .btn__input--default:active, a:active\n.btn--default .btn__input--default,\nbutton:active\n.btn--default .btn__input--default,\n.btn--default .btn__input--default:active {\n  top: 1px;\n}\n\n.cta + .btn, .cta +\n.btn--input, .cta +\n.btn--default {\n  margin-left: 12px;\n}\n\n.btn + .btn,\n.btn-ghost + .btn, .btn +\n.btn--input,\n.btn-ghost +\n.btn--input, .btn +\n.btn--default,\n.btn-ghost +\n.btn--default {\n  margin-top: 6px;\n}\n\n.btn--clicked:after {\n  -webkit-animation: fade-in-grow 0.3s forwards;\n  animation: fade-in-grow 0.3s forwards;\n}\n\n.btn--disabled {\n  background-color: rgba(178, 178, 178, 0.5);\n  cursor: not-allowed;\n  pointer-events: none;\n}\n\n@media screen and (min-width: 768px) {\n  .btn {\n    display: inline-block;\n    width: auto;\n  }\n  .btn + .btn,\n  .btn-ghost + .btn {\n    margin-top: 0;\n  }\n}\n","rows":[[{"Id":20949,"Name":"FirstName","Datatype":"string","Maxlength":255,"InputLabel":"First Name:","InputSourceChannel":"constant","ValidationMessage":"This field is required."}],[{"Id":20950,"Name":"LastName","Datatype":"string","Maxlength":255,"InputLabel":"Last Name:","InputSourceChannel":"constant","ValidationMessage":"This field is required."}],[{"Id":20948,"Name":"Email","Datatype":"email","Maxlength":255,"InputLabel":"Email Address:","InputSourceChannel":"constant","ValidationMessage":"Must be valid email. \u003Cspan class='mktoErrorDetail'\u003Eexample@yourdomain.com\u003C\/span\u003E"}]],"fieldsetRows":[],"action":null};
+		    MktoForms2.setOptions({baseUrl:"/js/forms2/"});
+		    var isDev = false;
+		    if(isDev && window.console && window.JSON){
+		      console.log(JSON.stringify(formDescriptor, null, "  "));
+		    }
+		    var form = MktoForms2.newForm(formDescriptor, function (form){
+		      var lpFields = {"lpId":null,"subId":null,"munchkinId":null,"lpurl":null};
+		      var pageFields = MktoForms2.getPageFields();
+		      form.addHiddenFields(lpFields);
+		      form.addHiddenFields(pageFields);
+		      if(window.mktoPreFillFields){
+		        form.setValuesCoerced(mktoPreFillFields);
+		      }
+		      if(!form.EnableDeferredMode){
+		        form.render();
+		      }
+		    });     
+		  })()
+		</script>
+		
+		<div id="mktoStyleLoaded" style="display: none; border-top-color: rgb(18, 52, 86);"></div>
+		
+		<noscript>
+		  &lt;form class='mktoForm mktoNoJS' action='' method='post'&gt;
+		        &lt;div class='mktoFormRow'&gt;
+		          &lt;div class='mktoFormCol'&gt;
+		            &lt;label class="mktoLabel" for='FirstName'&gt;
+		              First Name:            &lt;/label&gt;
+		            &lt;input type="text" class='mktoField mktoTextField' name='FirstName' id='FirstName'&gt;
+		          &lt;/div&gt;
+		        &lt;/div&gt;
+		        &lt;div class='mktoFormRow'&gt;
+		          &lt;div class='mktoFormCol'&gt;
+		            &lt;label class="mktoLabel" for='LastName'&gt;
+		              Last Name:            &lt;/label&gt;
+		            &lt;input type="text" class='mktoField mktoTextField' name='LastName' id='LastName'&gt;
+		          &lt;/div&gt;
+		        &lt;/div&gt;
+		        &lt;div class='mktoFormRow'&gt;
+		          &lt;div class='mktoFormCol'&gt;
+		            &lt;label class="mktoLabel" for='Email'&gt;
+		              Email Address:            &lt;/label&gt;
+		            &lt;input type="text" class='mktoField mktoTextField' name='Email' id='Email'&gt;
+		          &lt;/div&gt;
+		        &lt;/div&gt;
+		    &lt;span style="display:none;"&gt;&lt;input type="text" name="_marketo_comments" value=""&gt;&lt;/span&gt;
+		    &lt;span class='mktoButtonWrap'&gt;&lt;button type='submit' class='mktoButton'&gt;Submit&lt;/button&gt;&lt;/span&gt;
+		    &lt;input type="hidden" name="lpId" value="" /&gt;
+		    &lt;input type="hidden" name="subId" value="" /&gt;
+		    &lt;input type="hidden" name="lpurl" value="" /&gt;
+		    &lt;input type="hidden" name="formid" value="3802" /&gt;
+		    &lt;input type="hidden" name="ret" value="" /&gt;
+		    &lt;input type="hidden" name="munchkinId" value=""/&gt;
+		    &lt;input type="hidden" name="kw" value=""/&gt;
+		    &lt;input type="hidden" name="cr" value=""/&gt;
+		    &lt;input type="hidden" name="searchstr" value=""/&gt;
+		    &lt;input type="hidden" name="_mkt_disp" value="return"/&gt;
+		    &lt;input type="hidden" name="_mkt_trk" value=""/&gt;
+		  &lt;/form&gt;  
+		</noscript>
+		
+		
+		
+		<form class="mktoForm mktoHasWidth mktoLayoutLeft" novalidate="novalidate" style="font-family: inherit; font-size: 13px; color: rgb(51, 51, 51); visibility: hidden; position: absolute; top: -500px; left: -1000px; width: 2545px;">
+			
+		</form>
+	</body>
+</html>
